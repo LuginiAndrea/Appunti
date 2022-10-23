@@ -1,0 +1,117 @@
+\documentclass{report}
+\usepackage{amsmath}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\title{%
+    Metodi matematici per l'informatica \\    
+    \large Corso del professore Carlucci
+    \large https://sites.google.com/uniroma1.it/mmi2223/home
+}
+\author{Lugini Andrea}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Tecniche di conteggio: Matematica combinatoria}
+    La matematica combinatoria è la branca della matematica che si occupa dei problemi
+    di conteggio. \\
+    Ad esempio il problema del numero di targe automobilistiche disponibili al mondo
+    ricade in questo ambito. \\
+    \subsection{Principio Moltiplicativo}
+        Se scelgo un primo oggetto fra $m_1$, un secondo oggetto tra $m_2$, ..., un 
+        t-esimo oggetto fra $m_t$ oggetti ho $m_1 * m_2 * ... * m_t$ soluzioni.
+    \subsection{Disposizioni}
+    Le disposizioni sono sequenze nelle quali l'ordine conta.
+        \subsubsection{Disposizioni con ripetizione di ordine k di n oggetti}
+            $$D_{n,k}^{'} = n^k$$
+        \subsubsection{Disposizioni semplici di ordine k di n oggetti}
+            $$C.E. = 1 \leq k \leq n$$
+            $$D_{n,k} = \frac{n!}{(n - k)!}$$
+            Nel caso $k = n$, parliamo di permutazioni e abbiamo: $P_{n} = n!$.
+        \subsubsection{Permutazioni con ripetizioni}
+            Presi n elementi, che si \textbf{ripetono rispettivamente} $k_1, ..., k_n$ volte, le
+            possibili permutazioni sono: 
+            $$P_{n}^{k_1, ..., k_n} = \frac{n!}{k_1! * ... * k_n!}$$
+        \subsubsection{Permutazioni di n oggetti con q vincoli}
+            $$\frac{P_{n}}{q!}$$
+    \subsection{Combinazioni}
+    Le combinazioni sono sequenze nel quale l'ordine non conta
+        \subsubsection{Combinazioni semplici}
+            $$C_{n,k} = \frac{D_{n,k}}{P_k} = \binom{n}{k} = \frac{n!}{k! * (n-k)!}$$
+        \subsubsection{Combinazioni con ripetizione}
+            Risolvono il problema della \textbf{scritture additive} e della distribuzione
+            di k oggetti identici tra n insiemi
+            $$C_{n,k}^{'} = \binom{n + k - 1}{k}$$
+    \subsection{Proprietà del coefficiente binomiale}
+        $$\binom{n}{k} = \binom{n}{n-k}$$
+        Dimostrazione per \textbf{doppio conteggio}: con $\binom{n}{k}$ scelgo k oggetti su n,
+        lasciando fuori $n-k$ oggetti. E' quindi equivalente scegliere gli
+        $n-k$ oggetti da lasciare fuori, ovvero $\binom{n}{n-k}$ \\
+        $$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$$
+        Dimostrazione per \textbf{partizioni}: dato un insieme N di cardinalità n
+        nel quale vogliamo scegliere k oggetti sappiamo che il numero di possibili
+        soluzioni sono $\binom{n}{k}$.
+        Se vogliamo inserire vincoli specifici di scelta, ovvero scegliere k oggetti,
+        tra i quali un oggetto x, nell'insieme n, la totalità dei 
+        sottoinsiemi che contengono x è data dalla scelta fissa $x *$ le \textbf{combinazioni}
+        dei restanti $k-1$ oggetti fra $n-1$ elementi, ovvero $\binom{n-1}{k-1}$.
+        Se invece vogliamo vedere il problema al contrario, ovvero scegliere k oggetti,
+        tra i quali \textbf{non vogliamo x}, dobbiamo scegliere k oggetti su $n-1$
+        elementi, quindi $\binom{n-1}{k}$. Per partizione abbiamo quindi che la totalità
+        delle scelte è data dall'unione delle scelte che includono x e quelle che non includono
+        x, insiemi \textbf{disgiunti}, è quindi è dimostrata la formula. \\
+        $$\binom{n}{m} * \binom{m}{k} = \binom{n}{k} * \binom{n-k}{m-k}$$
+        Dimostrazione per \textbf{doppio conteggio}: il primo termine a sinistra
+        sveglie m oggetti su n elementi, e il secondo mi fa scegliere
+        k oggetti fra gli m scelti prima. A destra scegliamo k oggetti su n,
+        e poi scegliamo $m-k$ oggetti sui restanti $n-k$. \\
+        Esempio: \\
+            Vogliamo fare una squadra di calcio con 3 portieri e 10 giocatori di movimento, 
+            scegliendo fra 30 bambini. \\
+            A sinistra scegliamo prima i 13 bambini che giocheranno a calcio e poi 
+            sceglieremo i 3 fra questi 13 che faranno i portieri. \\
+            A destra invece scegliamo prima i 3 portieri fra i 30 bambini, e poi
+            sceglieremo i 10 giocatori di movimento fra i restanti 30 tolti i 3 portieri bambini.
+    \subsection{Principio additivo}
+        Il principio additivo ci permette di risolvere un problema di conteggio
+        \textbf{sommando le numerosità} di n sottoinsiemi, detti \textbf{partizioni} dell'insieme da contare,
+        se e solo se i sottoinsieme suddividono la collezione in gruppi \textbf{esclusivi ed esaustivi}.
+        E' esprimibile come:
+        $$ \forall i \in \{1, ..., n\}: A_i \subset A \; \wedge $$
+        $$ \forall i,j \in \{1, ..., n\} \textrm{ con } i \neq j: A_i \cap A_j = \emptyset \; \wedge $$
+        $$ \forall a \in A: \exists i \in \{1, ..., n\} \textrm{ t.c. } a \in A_i \ $$
+        $$ \Longrightarrow \#A = \Sigma_{i=1}^{n} \#A_i $$
+        \subsubsection{Metodo inverso}
+            Il principio additivo ci permette di dimostrare il metodo inverso. \\
+            Infatti, preso un sottoinsieme A di T ed il suo complementare $\overbar{A}$ in T, definito come
+            $\forall x \in T \textrm{ t.c. } x \notin A$, per i quali valgono quindi le proprietà
+            $A \cup \overbar{A} = T$ e $A \cap \overbar{A} = \emptyset$, è dimostrato quindi 
+            il principio additivo, che ci permette di calcolare $\#T$ come $\#A + \#\overbar{A}$, che implica
+            $$\#A = \#T - \#\overbar{A}$$.
+    \subsection{Insieme potenza}
+        $$P(A) = \{S | S \subset A\}$$
+        $$\#P(A) = \Sigma_{k=0}^{\#A}\binom{\#A}{k} = 2*\Sigma_{k=0}^{\#A/2}\binom{\#A}{k}$$
+        Dimostriamo ora per \textbf{buona traduzione} che $\#P(A) = 2^{\#A}$: \\
+        prendiamo due linguaggi, $L_1$, che rappresenta tutti $S \in P(A)$, ed
+        $L_2$, che rappresenta tutte le possibili \textbf{stringhe binarie} di 
+        lunghezza $ = \#A$; se costruiamo queste stringhe ponendo in posizione
+        $i$ 1 se $e \in S$ e 0 in caso contrario, possiamo notare che, poichè
+        ogni $S \in P(A)$ è distinto, anche le corrispondenti stringhe saranno distinte. \\
+        Quindi, $\#P(A) = \#\textrm{stringhe binarie con l} = \#A$, ed è banale contare 
+        quante stringhe sono presenti in $L_2$: 2 possibili valori, 0 ed 1, per $\#A$
+        posizioni, ovvero $2^{\#A}$, esattamente quello che volevamo dimostrare. \\
+        Possiamo inoltre notare che $\binom{n}{k} = \#\textrm{stringhe binarie con l} = \#A
+        \textrm{ con esattamente k "1"}$.
+    \subsection{PIE: Principio di inclusione ed esclusione}
+        L'insieme $Q$ dato da tutti gli elementi distinti degli insiemi $A$ e $B$
+        è esprimibile come $(A \cup B) \cap \overline{A \cap B}$. \\
+        Quindi:
+        $$\#\left(A \cup B\right) = \#A + \#B - \#\left(A \cap B\right)$$
+        Più genericamente,
+        $$\#\left(A \cup B \cup ... \cup Z\right) = $$
+        $$\#A + \#B + ... + \#Z$$
+        $$ - \#\left(A \cap B\right) - \#\left(A \cap Z\right) - \left(B \cap Z\right) - ... $$
+        $$ + \#\left(A \cap B \cap Z\right) + ... $$
+    \subsection{Metodo di riduzione}
+        Il metodo di riduzione consiste nel trasformare un problema in un problema
+        più semplice.
+\end{document} 
