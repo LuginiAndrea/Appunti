@@ -13,3 +13,4 @@
 \contentsline {subsubsection}{Metodo inverso}{4}{}%
 \contentsline {subsection}{\numberline {0.1.6}Insieme potenza}{4}{}%
 \contentsline {subsection}{\numberline {0.1.7}PIE: Principio di inclusione ed esclusione}{5}{}%
+\contentsline {subsection}{\numberline {0.1.8}Metodo di riduzione}{5}{}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  15 OCT 2022 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  1 NOV 2022 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -129,17 +129,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--60
+Underfull \hbox (badness 10000) in paragraph at lines 49--62
 
  []
 
 [3]
-Overfull \hbox (36.52708pt too wide) in paragraph at lines 90--102
+Overfull \hbox (36.52708pt too wide) in paragraph at lines 92--104
 \OT1/cmr/m/n/10 Possiamo in-oltre no-tare che $[] = #[] = #\OML/cmm/m/it/10 A[]
 $\OT1/cmr/m/n/10 . 
  []
@@ -169,7 +169,7 @@ type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lugio/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on appunti.pdf (6 pages, 177029 bytes).
+Output written on appunti.pdf (6 pages, 177838 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

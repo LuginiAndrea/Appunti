@@ -16,11 +16,11 @@
         \end{center}
         La retta è \textbf{lineare} in x e y. \\
         Se $ m > 0 $ è \textbf{crescente}, se $ m < 0 $ è \textbf{decrescente}.
-        \textbf{Forma esplicita} $ y = mx + q $. 
-        Questa forma descrive tutte le rette tranne quella \textbf{verticale}: $ y = c $ \
+        \textbf{Forma esplicita} $ y = mx + q $. \\
+        Questa forma descrive tutte le rette tranne quella \textbf{verticale}: $ y = c $ \\
         \textbf{Forma implicita} $ ax + by + c = 0 $
         $$ m = tg\Theta = \frac{\Delta y}{\Delta x} $$
-        $$ y = m(x - x_0) + y_0 \Longleftrightarrow q = mx_0 + y_0 $$
+        $$ y = m(x - x_0) + y_0 \Longleftrightarrow q = y_0 - mx_0 $$
         $$ ax \geq -b \Longrightarrow $$
         \begin{itemize}
             \item se $a > 0: x \geq \frac{-b}{a} $
@@ -102,7 +102,7 @@
         \item \textbf{-1}: quel numero t.c. $-1 + 1 = 0$. Da qui definiamo $\mathbf{Z}$.
         \item \textbf{$\frac{n}{m}$}: 
             $a_1, a_2, ..., a_n \in \mathbf{Z}, 0 \leq a_2, ..., a_n \leq 9:
-            a_1 + \Sigma_{i=1}{n}\frac{a^i}{10^i}$
+            a_1 + \Sigma_{i=1}^{n}\frac{a^i}{10^i}$
         \item \textbf{$\mathbf{Q}$}: 
             ${\frac{n}{m},\frac{n_1}{m_1} \in \mathbf{Z}, m, m_1 \neq 0: 
             (n, m) = (n_1, m_1) \Longleftrightarrow (n * m_1) = (n_1 * m)}$. \\
@@ -139,7 +139,7 @@
     $$\frac{n!}{k!\left(n-k\right)!} = 
         \frac{k\left(n-1\right)! + \left(n-k\right)\left(n-1\right)!}{k!\left(n-k\right)!} \Longleftrightarrow$$
     $$\frac{n!}{k!\left(n-k\right)!} = 
-        \frac{\left(k+n-k\right)!}{k!\left(n-k\right)!} \Longleftrightarrow$$
+        \frac{\left(n-1\right)!\left(k+n-k\right)!}{k!\left(n-k\right)!} \Longleftrightarrow$$
     $$\frac{n!}{k!\left(n-k\right)!} = \frac{n * \left(n-1\right)!}{k!\left(n-k\right)!} \Longleftrightarrow$$
     $$\frac{n!}{k!\left(n-k\right)!} = \frac{n!}{k!\left(n-k\right)!}$$
     \\ \\
@@ -187,7 +187,7 @@
             Poichè $\mathbf{R}^2$ è rappresentabile sul piano cartesiano anche 
             $g_{\mathbf{R}}$ lo è
         \subsubsection{Proprietà fondamentale della funzione espressa col grafico}
-        $$\forall x_0 \in A \exists!y_0 \textrm{ t.c. } {x = x_0} \cap {g_{\mathbf{R}}}
+        $$\forall x_0 \in A \, \exists!y_0 \textrm{ t.c. } {x = x_0} \cap {g_{\mathbf{R}}}
             = {(x_0, f(x_0))}$$
     \subsection{Proprietà delle funzioni}
         Una funzione è detta
@@ -205,16 +205,17 @@
                 x_1 \leq x_2: f(x_1) \geq f(x_2)$
             \item \textbf{periodica di periodo T}: $\forall x \in A, x + kT \in A, 
                 k \in \mathbf{Z}: f(x + kT) = f(x)$
+            \item \textbf{successione}: il dominio è $\mathbf{N}$, $f(n) = a_n$
         \end{itemize}
     \subsection{Funzioni composte}
     \begin{itemize}
         \item $g(f(x)) = g \circ f(x)$
         \item \textbf{funzione neutra o identità}: $f(x) = x = I(x)$
         \item \textbf{funzione inversa}: $f \circ f^{-1}(x) = f^{-1} \circ f(x) = I(x)$
-        \item $f$: Img$_f^{-1} \longrightarrow$ Def$_f^{-1}$
+        \item $f$: Img$_{f^{-1}} \longrightarrow$ Def$_{f^{-1}}$
         \item $f^{-1}$: Img$_f \longrightarrow$ Def$_f$
         \item $f \circ f^{-1}$: Img$_f \longrightarrow$ Def$_f$
-        \item $f^{-1} \circ f$: Img$_f^{-1} \longrightarrow$ Def$_f^{-1}$
+        \item $f^{-1} \circ f$: Img$_{f^{-1}} \longrightarrow$ Def$_{f^{-1}}$
     \end{itemize}
         \subsection{Condizioni di esistenza della funzione inversa}
             \begin{itemize}
@@ -235,9 +236,61 @@
             \item $|f(x)|$: ribaltamento su asse y degli $y < 0$
             \item $f(|x|)$: Ribaltamento su asse x degli $x < 0$
         \end{itemize}
+\section{Limiti}
+    \subsection{Limiti convergenti}
+        Una successione è detta \textbf{convergente} a $l$, o $\lim_{x \to \infty} = l$ se 
+        $$\forall\epsilon > 0,\, \exists N = N\left(\epsilon\right) \textrm{ t.c. } \forall n > N \Longrightarrow
+        |a_n - l| \leq \epsilon$$. \\
+        Non tutte le successioni convergono.
+    \subsection{Limiti divergenti}
+        Una successione è detta \textbf{divergente} a $+\infty$, o 
+        $\lim_{x \to \infty} = +\infty$, se $$\forall M > 0, \exists N = N\left(M\right)
+        \textrm{ t.c. } \forall n > N \Longrightarrow a_n \geq M$$ e divergente a 
+        $-\infty$ se $a \leq -M$.
+        Non tutte le successioni divergono.
+        \subsubsection{Convergenza per eccesso e per difetto}
+            Una successione è detta tendere ad l per \textbf{eccesso} (l$^+$) nel caso 
+            in cui a$_n$ > l, per \textbf{difetto}(l$^-$) in caso contrario.
+            
+    \subsection{Monotonia e limiti}
+        Preso $A = \{a_n \forall n \in \mathbf{N}\}$, se $a_{n \in \mathbf{N}}$ è una successione \textbf{monotona}:
+        \begin{itemize}
+            \item \textbf{crescente}: converge a sup$_A$ se limitata, se no diverge a $+\infty$
+            \item \textbf{decrescente}: converge ad inf$_A$ se limitata, se no diverge a $-\infty$
+        \end{itemize}
+    \subsection{Esempi di successioni limitate}
+        $$\lim_{n \to \infty} \frac{1}{n} = 0$$ 
+        $$\Longrightarrow |\frac{1}{N}-0| \leq \epsilon \Longrightarrow \frac{1}{\epsilon} \leq n$$
+        $$\Longrightarrow \textrm{ per } N = \frac{1}{\epsilon} \textrm{ esiste sempre } n > N$$
+        \\
+        $$\lim_{n \to \infty} 2^n = \infty$$
+        $$\Longrightarrow 2^n \geq M \Longrightarrow n \geq \log_2M$$
+        $$\Longrightarrow \textrm{ per } N = \log_2M \textrm{ esiste sempre } n > log_2M$$ 
+        \\
+        $$\lim{n \to \infty} \frac{n+1}{n-1} = 1$$
+        $$\Longrightarrow |\frac{n+1}{n-1} - 1| \leq \epsilon \Longrightarrow \geq -\epsilon \, \forall n \in \mathbf{N}$$
+        $$\Longrightarrow \frac{n+1}{n-1} < 1 + \epsilon \Longrightarrow n+1 \leq n + n\epsilon -1 - \epsilon$$
+        $$\Longrightarrow 2 + \epsilon \leq n\epsilon \Longrightarrow n \geq \frac{2}{\epsilon} + 1$$
+    \subsection{Algebra dei limiti}
+        $\lim_{n \to n_0} a_n = a \, \, \lim_{n to \infty} b_n = b$ \\
+        $\lim_{n \to n_0} a_n + b_n = a + b$ \\
+        $\lim_{n \to n_0} a_n * b_n = a * b$ \\
+        $\lim_{n \to n_0} a_n^{b_n} = a^b$ \\
+        $\lim_{n \to n_0} f(a_n) = f(a)$ \\
+    \subsection{Teorema di permanenza del segno}
+        $\lim_{n \to n_0} a_n = a, \, a \geq 0 \Longrightarrow \exists N \in \mathbf{N} \textrm{ t.c. }
+            \forall n > N: a_n \geq 0$ \\
+        $\lim_{n \to n_0} a_n = a, \, a \leq 0 \Longrightarrow \exists N \in \mathbf{N} \textrm{ t.c. }
+            \forall n > N: a_n \leq 0$ \\
+        E' quindi implicato: \\
+        $\lim_{n \to n_0} a_n = a, \, \lim_{n \to n_0} b_n = b, \, a_n > b_n \Longrightarrow a > b$
+    \subsection{Teorema dei carabinieri}
+        $a_n \leq b_n \leq c_n$
+        $a = c \Longrightarrow a = b = c$
+        
+
+
 
 \end{document}
 
 
-    % \subsection{Funzioni elementari}
-    % \begin{itemize}

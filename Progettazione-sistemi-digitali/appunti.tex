@@ -285,6 +285,9 @@
             \item \textbf{Implicant}: prodotto di literal
             \item \textbf{Minterm}: prodotto di tutte le variabili d'input
             \item \textbf{Maxterm}: somma di tute le variabili d'input
+            \item \textbf{Forma minima}: Forma col minor numero di min/maxtermini di un'espressione booleana
+            \item \textbf{Forma canonica}: Espressione  di un circuito booleano contenente
+                tutti i max/mintermini
         \end{itemize}
     \subsection{Dualità dell'algebra booleana}
         \noindent\setlength\tabcolsep{4pt}
@@ -346,7 +349,10 @@
             \item Il cerchio più grande è detto \textbf{Prime Implicant}
         \end{itemize}
             Queste sono le regole per ottenere una SOP, per la POS basta prendere gli 0 ed i maxtermini.
-            
+    \subsection{Teorema di shannon}
+        $f(x_1, x_2, ..., x_n) = x_1 * f(1, x_2, ..., x_n) + \n{x_1} * f(0, x_2, ..., x_n)$
+        Dal teorema possiamo dedurre che qualsiasi circuito combinatorio ad n variabili 
+        è realizzabile con un multiplexer e due circuiti ad n-1 variabili.            
 \newpage
 \section{Circuiti logici}
     \subsection{Porte logiche}
@@ -491,6 +497,43 @@
             \begin{figure}[H]
                 \includegraphics[width=\textwidth]{tristatebusses.png}
             \end{figure}
-        \end{center}         
+        \end{center}      
+    \subsection{Circuiti ad n-livelli}
+        Volendo, potremmo comporre tutti i circuiti combinatori a 2 livelli, 
+        ma nella realtà difficilmente si fa questa scelta, poichè capita di 
+        frequente che all'interno di un circuito ci siano porte logiche riutilizzabili
+        più volte, costruendo quindi un circuito più piccolo e con meno porte logiche, 
+        il che ci porta dei vantaggi di \textbf{area} occupata e \textbf{calore} generato dal circuito,
+        al netto delle \textbf{performance}.
+    \subsection{Multiplexer}
+        Il MUX è un circuito con N input, $\log_2N$ input di selezione e 
+        1 output, e vengono realizzati coi \textbf{tristate busses}. \\
+        Con i multiplexer 2:1 e \textbf{possibile realizzare qualsiasi circuito combinatorio} 
+        (\textbf{lookup table}), e vengono usati in quanto usano pochi transistor.
+    \subsection{Decoder}
+        Il DEC è un circuito con 1 input dati, N output di uscita e $\log_2N$
+        input di selezione, che scelgono su quale output mandare il segnale. \\
+        Il DEC realizza tutti i possibili mintermini di un espressione con $\log_2N$
+        variabili, ed usandoli è quindi \textbf{possibile realizzare qualsiasi circuito combinatorio}.
+    \subsection{Delay}
+        Il delay è il tempo che ci impiega un circuito a modificare l'output quando
+        si modificano gli input, ed è causato dalle proprietà intrinsiche delle porte logiche (capacità e resistenze) e 
+        dal limite della velocità della luce. \\
+        Questo tempo è \textbf{diverso} in base a quali input cambiano, a come cambia l'output e 
+        allo stato del circuito (freddo / caldo), e quindi non esiste un delay universale per la porta logica. \\
+        Si individuano quindi 2 delay:
+        \begin{itemize}
+            \item \textbf{propagation delay}: t$_{pd}$, il delay \textbf{massimo}
+            \item \textbf{contamination delay}: t$_{cd}$, il delay \textbf{minimo}
+        \end{itemize}
+        \subsubsection{Critical e short path}
+            La critical path sarebbe il tempo \textbf{massimo} che il circuito ci mette, cambiato 
+            un input, a cambiare l'output, La short path quello \textbf{minimo}.
+            Il tempo della CP si calcola sommando i t$_{pd}$ delle porte che compongono la CP,
+            quello della SP sommando i t$_{cd}$ delle porte che compongono la SP
+            \begin{center}
+                \includegraphics[width=\textwidth]{path.jpg}
+            \end{center}
+        
 \end{document}
 

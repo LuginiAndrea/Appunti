@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  22 OCT 2022 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  25 OCT 2022 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,169 +162,180 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-] [2] [3]
+] [2] [3] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 86--92
 
  []
 
-[4] [5] [6]
-<buono.png, id=35, 642.4pt x 111.41624pt>
+[5] [6] [7]
+<buono.png, id=38, 642.4pt x 111.41624pt>
 File: buono.png Graphic file (type png)
 <use buono.png>
 Package pdftex.def Info: buono.png  used on input line 203.
 (pdftex.def)             Requested size: 345.0pt x 59.83745pt.
-<cattivo.png, id=37, 385.44pt x 66.84975pt>
+<cattivo.png, id=40, 385.44pt x 66.84975pt>
 File: cattivo.png Graphic file (type png)
 <use cattivo.png>
 Package pdftex.def Info: cattivo.png  used on input line 207.
 (pdftex.def)             Requested size: 345.0pt x 59.83574pt.
- [7 <./buono.png> <./cattivo.png>] [8] [9]
-Missing character: There is no ° in font cmr7!
-Missing character: There is no ° in font cmr7!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 322.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 322.
+ [8 <./buono.png> <./cattivo.png>] [9] [10]
+Overfull \hbox (23.02792pt too wide) in paragraph at lines 288--289
+[]\OT1/cmr/bx/n/10 Forma min-ima\OT1/cmr/m/n/10 : Forma col mi-nor nu-mero di m
+in/maxtermini di un'espressione
+ []
 
 Missing character: There is no ° in font cmr7!
+Missing character: There is no ° in font cmr7!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 322.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 325.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 322.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 325.
 
 Missing character: There is no ° in font cmr7!
 
-Underfull \hbox (badness 10000) in alignment at lines 322--322
+LaTeX Warning: Command \textdegree invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 325.
+
+Missing character: There is no ° in font cmr7!
+
+Underfull \hbox (badness 10000) in alignment at lines 325--325
 [][][] 
  []
 
 
-Overfull \hbox (91.68578pt too wide) in paragraph at lines 290--326
+Overfull \hbox (91.68578pt too wide) in paragraph at lines 293--329
   | [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--326
+Underfull \hbox (badness 10000) in paragraph at lines 293--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--326
+Underfull \hbox (badness 10000) in paragraph at lines 293--329
 
  []
 
-[10]
-<k1.png, id=54, 259.56975pt x 158.39175pt>
+[11]
+<k1.png, id=57, 259.56975pt x 158.39175pt>
 File: k1.png Graphic file (type png)
 <use k1.png>
-Package pdftex.def Info: k1.png  used on input line 333.
+Package pdftex.def Info: k1.png  used on input line 336.
 (pdftex.def)             Requested size: 103.50105pt x 63.15738pt.
-<k2.png, id=55, 240.29774pt x 241.50224pt>
+<k2.png, id=58, 240.29774pt x 241.50224pt>
 File: k2.png Graphic file (type png)
 <use k2.png>
-Package pdftex.def Info: k2.png  used on input line 334.
+Package pdftex.def Info: k2.png  used on input line 337.
 (pdftex.def)             Requested size: 103.50105pt x 104.01712pt.
-<k3.png, id=56, 552.0625pt x 293.095pt>
+<k3.png, id=59, 552.0625pt x 293.095pt>
 File: k3.png Graphic file (type png)
 <use k3.png>
-Package pdftex.def Info: k3.png  used on input line 335.
+Package pdftex.def Info: k3.png  used on input line 338.
 (pdftex.def)             Requested size: 103.49461pt x 71.13135pt.
- [11 <./k1.png> <./k2.png> <./k3.png>]
-<not.png, id=63, 2569.6pt x 1284.8pt>
+ [12 <./k1.png> <./k2.png> <./k3.png>]
+<not.png, id=67, 2569.6pt x 1284.8pt>
 File: not.png Graphic file (type png)
 <use not.png>
-Package pdftex.def Info: not.png  used on input line 359.
+Package pdftex.def Info: not.png  used on input line 365.
 (pdftex.def)             Requested size: 56.89209pt x 28.44604pt.
-<buffer.png, id=64, 903.375pt x 451.6875pt>
+<buffer.png, id=68, 903.375pt x 451.6875pt>
 File: buffer.png Graphic file (type png)
 <use buffer.png>
-Package pdftex.def Info: buffer.png  used on input line 366.
+Package pdftex.def Info: buffer.png  used on input line 372.
 (pdftex.def)             Requested size: 56.90189pt x 28.45094pt.
-<and.png, id=65, 319.1925pt x 159.59625pt>
+<and.png, id=69, 319.1925pt x 159.59625pt>
 File: and.png Graphic file (type png)
 <use and.png>
-Package pdftex.def Info: and.png  used on input line 373.
+Package pdftex.def Info: and.png  used on input line 379.
 (pdftex.def)             Requested size: 56.9018pt x 28.4509pt.
-<or.png, id=66, 1204.5pt x 602.25pt>
+<or.png, id=70, 1204.5pt x 602.25pt>
 File: or.png Graphic file (type png)
 <use or.png>
-Package pdftex.def Info: or.png  used on input line 380.
+Package pdftex.def Info: or.png  used on input line 386.
 (pdftex.def)             Requested size: 56.90189pt x 28.45094pt.
- [12 <./not.png> <./buffer.png> <./and.png> <./or.png>]
-<xor.png, id=75, 1204.5pt x 602.25pt>
+ [13 <./not.png> <./buffer.png> <./and.png> <./or.png>]
+<xor.png, id=78, 1204.5pt x 602.25pt>
 File: xor.png Graphic file (type png)
 <use xor.png>
-Package pdftex.def Info: xor.png  used on input line 387.
+Package pdftex.def Info: xor.png  used on input line 393.
 (pdftex.def)             Requested size: 56.90189pt x 28.45094pt.
-<nand.png, id=76, 481.8pt x 201.00093pt>
+<nand.png, id=79, 481.8pt x 201.00093pt>
 File: nand.png Graphic file (type png)
 <use nand.png>
-Package pdftex.def Info: nand.png  used on input line 394.
+Package pdftex.def Info: nand.png  used on input line 400.
 (pdftex.def)             Requested size: 56.90189pt x 28.45276pt.
-<nor.png, id=77, 481.8pt x 201.00093pt>
+<nor.png, id=80, 481.8pt x 201.00093pt>
 File: nor.png Graphic file (type png)
 <use nor.png>
-Package pdftex.def Info: nor.png  used on input line 401.
+Package pdftex.def Info: nor.png  used on input line 407.
 (pdftex.def)             Requested size: 56.90189pt x 28.45276pt.
-<xnor.png, id=78, 963.6pt x 347.04657pt>
+<xnor.png, id=81, 963.6pt x 347.04657pt>
 File: xnor.png Graphic file (type png)
 <use xnor.png>
-Package pdftex.def Info: xnor.png  used on input line 408.
+Package pdftex.def Info: xnor.png  used on input line 414.
 (pdftex.def)             Requested size: 56.90189pt x 28.4527pt.
- [13 <./xor.png> <./nand.png> <./nor.png> <./xnor.png>]
-<bubblepushing.png, id=86, 375.4025pt x 569.12625pt>
+ [14 <./xor.png> <./nand.png> <./nor.png> <./xnor.png>]
+<bubblepushing.png, id=89, 375.4025pt x 569.12625pt>
 File: bubblepushing.png Graphic file (type png)
 <use bubblepushing.png>
-Package pdftex.def Info: bubblepushing.png  used on input line 447.
+Package pdftex.def Info: bubblepushing.png  used on input line 453.
 (pdftex.def)             Requested size: 345.0pt x 523.06409pt.
 
-[14]
-<completeness.png, id=90, 408.52625pt x 510.90875pt>
+[15]
+<completeness.png, id=93, 408.52625pt x 510.90875pt>
 File: completeness.png Graphic file (type png)
 <use completeness.png>
-Package pdftex.def Info: completeness.png  used on input line 454.
+Package pdftex.def Info: completeness.png  used on input line 460.
 (pdftex.def)             Requested size: 345.0pt x 431.48358pt.
- [15 <./bubblepushing.png>] [16 <./completeness.png>]
-<tristatebuffer.png, id=98, 146.949pt x 200.54926pt>
+ [16 <./bubblepushing.png>] [17 <./completeness.png>]
+<tristatebuffer.png, id=101, 146.949pt x 200.54926pt>
 File: tristatebuffer.png Graphic file (type png)
 <use tristatebuffer.png>
-Package pdftex.def Info: tristatebuffer.png  used on input line 484.
+Package pdftex.def Info: tristatebuffer.png  used on input line 490.
 (pdftex.def)             Requested size: 345.0pt x 470.8746pt.
- [17] [18 <./tristatebuffer.png>]
-<tristatebusses.png, id=107, 381.67593pt x 177.66376pt>
+ [18] [19 <./tristatebuffer.png>]
+<tristatebusses.png, id=110, 381.67593pt x 177.66376pt>
 File: tristatebusses.png Graphic file (type png)
 <use tristatebusses.png>
-Package pdftex.def Info: tristatebusses.png  used on input line 492.
+Package pdftex.def Info: tristatebusses.png  used on input line 498.
 (pdftex.def)             Requested size: 345.0pt x 160.59802pt.
- [19 <./tristatebusses.png>] (appunti.aux) ) 
+ [20 <./tristatebusses.png>]
+<path.jpg, id=114, 493.3632pt x 370.0224pt>
+File: path.jpg Graphic file (type jpg)
+<use path.jpg>
+Package pdftex.def Info: path.jpg  used on input line 535.
+(pdftex.def)             Requested size: 345.0pt x 258.75418pt.
+ [21 <./path.jpg>] (appunti.aux) ) 
 Here is how much of TeX's memory you used:
- 1743 strings out of 478338
- 29573 string characters out of 2836700
+ 1751 strings out of 478338
+ 29664 string characters out of 2836700
  336454 words of memory out of 3000000
- 20177 multiletter control sequences out of 15000+600000
+ 20183 multiletter control sequences out of 15000+600000
  474455 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,204b,283s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\lugio\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/l
-ugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi5.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on appunti.pdf (20 pages, 407028 bytes).
+ <C:\Users\lugio\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lu
+gio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
+/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5
+.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on appunti.pdf (22 pages, 480834 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
