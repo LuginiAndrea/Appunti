@@ -114,4 +114,35 @@
     \subsection{Metodo di riduzione}
         Il metodo di riduzione consiste nel trasformare un problema in un problema
         più semplice.
-\end{document} 
+\section{Funzioni}
+    $$ f: I \longrightarrow O $$
+    \subsection{Definizione}
+        Una funzione è una legge che, preso l'insieme di partenza $I$ detto dominio, e 
+        l'insieme di arrivo $O$ detto codominio, $\exists!y \textrm{ t.c. } y = f\left(x\right)$.
+    \subsection{Immagine e pre-immagine}
+        $y \in O \textrm{ t.c. } y = f\left(x \in I\right)$ è detta immagine di $x$ via $f$. \\
+        $x \in I \textrm{ t.c. } y \in O = f\left(x\right)$ è detta pre-immagine di $y$ via $f$
+    \subsection{Definizione insiemistica}
+        Presi $I$ e $O$, $f: I \longrightarrow O \subset (I \times O) \textrm { t.c. }
+        \forall x \in I \exists! y \in O \textrm{ t.c. } \left(x,y\right) \in f$ \\
+    \subsection{Funzioni a più argomenti}
+        Una funzione a più argomenti può essere vista come una funzione che ha 
+        $$I = I_1 \times I_2 \times ...$$
+        ed e quindi formata da \textbf{n-tuple ordinate}. \\
+        La notazione usata in questo caso è:
+        $$f: I^n \longrightarrow O$$
+    \subsection{Iniettività, Suriettività e Biettività}
+        Iniettiva: $\forall x,y \textrm{ t.c. } x \neq y \Longrightarrow f\left(x\right) \neq f\left(y\right)$ \\
+        Suriettiva: $\forall y \in O \exists x \in I \textrm{ t.c. } y = f\left(x\right)$ \\
+        Biettiva: Iniettiva $\wedge$ suriettiva
+    \subsection{Proprietà insiemistiche delle funzioni}
+        Presi $A,B \subset I$:
+        $f \textrm{ iniettiva } \Longrightarrow f\left(A \cap B\right) = f\left(A\right) \cap f\left(B\right)$
+        $f\left(A \cap B\right) = f\left(A\right) \cap f\left(B\right)$
+    \subsection{Composizione di funzioni}
+        Prese $f: X \longrightarrow Y$ e $g: Y \longrightarrow Z, \, g \circ f = 
+        h: X \longrightarrow Z \textbf{ definita come } h\left(x\right) = g\left(f\left(x\right)\right)$ \\
+        La composizione di funzione \textbf{non è commutativa} ma è \textbf{associativa} \\
+        \subsection{Iniettività, Suriettività e Biettività}
+            La composizione di 2 funzioni iniettive/suriettive/biettive è iniettiva/suriettiva/biettiva.
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  31 OCT 2022 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  4 NOV 2022 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -232,12 +232,12 @@ LaTeX Warning: No \author given.
  [1
 
 ]
-<retta.png, id=12, 510.90875pt x 381.425pt>
+<retta.png, id=13, 510.90875pt x 381.425pt>
 File: retta.png Graphic file (type png)
 <use retta.png>
 Package pdftex.def Info: retta.png  used on input line 15.
 (pdftex.def)             Requested size: 345.0pt x 257.56134pt.
-<parabola.jpg, id=13, 1284.8pt x 722.7pt>
+<parabola.jpg, id=14, 1284.8pt x 722.7pt>
 File: parabola.jpg Graphic file (type jpg)
 <use parabola.jpg>
 Package pdftex.def Info: parabola.jpg  used on input line 31.
@@ -294,17 +294,17 @@ rdo, non lo fosse vor-rebbe dire che $\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 x[]; x
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 264--266
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--280
+Underfull \hbox (badness 10000) in paragraph at lines 276--281
 
  []
 
@@ -312,7 +312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--280
 Here is how much of TeX's memory you used:
  3215 strings out of 478338
  51129 string characters out of 2836700
- 352567 words of memory out of 3000000
+ 352560 words of memory out of 3000000
  21601 multiletter control sequences out of 15000+600000
  479303 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -337,7 +337,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lu
 gio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
 Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb>
-Output written on appunti.pdf (12 pages, 383268 bytes).
+Output written on appunti.pdf (12 pages, 385432 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

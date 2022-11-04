@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  1 NOV 2022 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  4 NOV 2022 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -144,34 +144,50 @@ Overfull \hbox (36.52708pt too wide) in paragraph at lines 92--104
 $\OT1/cmr/m/n/10 . 
  []
 
-[4] [5] (appunti.aux) ) 
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
+
+ []
+
+
+Overfull \hbox (33.41748pt too wide) in paragraph at lines 147--148
+\OT1/cmr/m/n/10 La com-po-sizione di 2 fun-zioni ini-et-tive/suriettive/biettiv
+e ^^Re ini-et-tiva/suriettiva/biettiva. 
+ []
+
+[6] (appunti.aux) ) 
 Here is how much of TeX's memory you used:
- 1210 strings out of 478338
- 18798 string characters out of 2836700
- 326877 words of memory out of 3000000
- 19690 multiletter control sequences out of 15000+600000
- 475248 words of font info for 49 fonts, out of 8000000 for 9000
+ 1215 strings out of 478338
+ 18844 string characters out of 2836700
+ 327877 words of memory out of 3000000
+ 19693 multiletter control sequences out of 15000+600000
+ 475867 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,8n,62p,292b,183s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lugio/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lu
-gio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
-Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lugio/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on appunti.pdf (6 pages, 177838 bytes).
+<C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lugio/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lugio/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/User
+s/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lugio/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on appunti.pdf (7 pages, 183527 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
