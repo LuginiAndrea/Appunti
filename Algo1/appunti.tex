@@ -228,13 +228,79 @@
                 \item Quindi, $k_12^{\frac{n}{2}} \leq$ T(n) $\leq k_22^n$
             \end{enumerate}
             \subsubsection{Metodo dell'albero}
-            
+                La costruzione dell'\textbf{albero di ricorrenza} è un metodo 
+                grafico per la rappresentazione del costo computazionale. \\
+                Ogni nodo è relativo alla soluzione dei problemi per una certa dimensione
+                k, ed ha tznti figli quante sono le chiamate ricorsive il cui il nodo stesso 
+                è scomposto. \\
+                Riporta il \textbf{costo della ricombinazione delle soluzioni parziali}. \\
+                Per esempio, l'albero dell'equazione di ricorrenza:
+                \begin{itemize}
+                    \item T(n) = 2T(n/2) + \T{n$^2$}
+                    \item T(1) = \T{1}
+                \end{itemize}
+                è:
+                \begin{center}
+                    \includegraphics{albero.png}
+                \end{center}
+                Si applica poi ricorsivamente il processo su ognuno dei figli.
+            \subsubsection{Metodo del teorema principale}
+                Fornisce una risoluzione meccanica per le equazioni nella forma:
+                \begin{itemize}
+                    \item T(n) = aT(n/b) + f(n) (a $\geq$ 1, b $>$ 1 e f(n) asintoticamente positiva)
+                    \item T(1) = \T{1}
+                \end{itemize}
+                Il teorema enuncia che, rispettate le ipotesi espresse sopra, se $f\left(n\right)$:
+                \begin{itemize}
+                    \item $= O\left(n^{\log_ba-\epsilon}\right)$ per $\epsilon > 0 
+                        \Longrightarrow T\left(n\right) = $\T{$n^{\log_ba}$}
+                    \item $= $ \T{$n^{\log_ba}$} $
+                        \Longrightarrow T\left(n\right) = $ \T{$n^{\log_ba}\log_2n$}
+                    \item $= \Omega\left(n^{\log_ba+\epsilon}\right)$ per $\epsilon > 0$ e 
+                        se $af\left(n/b\right) < cf\left(n\right)$ per $c < 1$ ed $n$ sufficientemente
+                        grande $\Longrightarrow T\left(n\right)$ = \T{$f\left(n\right)$}
+                \end{itemize}
+                In termini più semplici, enuncia che se $f\left(n\right)$:
+                \begin{itemize}
+                    \item $> n^{\log_ba}$ allora $T\left(n\right)$ = \T{$f\left(n\right)$}
+                    \item $= n^{\log_ba}$ allora $T\left(n\right)$ = \T{$n^{\log_ba}\log_2n$}
+                    \item $< n^{\log_ba}$ allora $T\left(n\right)$ = \T{$n^{\log_ba}$}
+                    \item A patto che $|f\left(n\right) - n^{\log_ba}| > n^\epsilon, \, \epsilon > 0$   
+                \end{itemize}
+                Alcuni esempi:
+                \begin{enumerate}
+                    \item \begin{itemize}
+                        \item T(n) = 9T(n/3) + \T{n}
+                        \item T(1) = \T{1}
+                        \item a = 9, b = 3, f(n) = \T{n}
+                        \item $n^{\log_ba} = n^{\log_39} = n^2$
+                        \item $n < n^2 \Longrightarrow T\left(n\right) =$ \T{$n^2$}
+                    \end{itemize}
+                    \item \begin{itemize}
+                        \item T(n) = T(2n/3) + \T{1}
+                        \item T(1) = \T{1}
+                        \item a = 1, b = 3/2, f(n) = \T{1}
+                        \item $n^{\log_ba} = n^{log_{3/2}1} = n^0 = 1$
+                        \item $1 = 1 \Longrightarrow T\left(n\right)$ = \T{$1 * log_2n$}
+                    \end{itemize}
+                    \item \begin{itemize}
+                        \item T(n) = 3T(n/4) + \T{$n\log_2n$}
+                        \item T(1) = \T{1}
+                        \item a = 3, b = 4, f(n) = \T{$n\log_2n$}
+                        \item $n^{\log_43} = n^{0<x<1}$
+                        \item $n\log_2n > n^{0<x<1}$
+                        \item $\frac{3n}{4}\log_2\frac{n}{4} \leq c(n\log_2n), \, c < 1 
+                            \Longrightarrow \frac{3n}{4}\log_2\frac{n}{4} \leq \frac{3}{4}(n\log_2n)
+                            \Longrightarrow$
+                        \item $T\left(n\right)$ = \T{$n\log_2n}$
+                    \end{itemize}
+                \end{enumerate}
 \section{Esercizi}
     \detokenize{https://mega.nz/folder/4osyiZAI#2I2lpukRbJ-n7-HsmHLxhA/folder/l1tXEIrS}
     \subsection{1}
         Il caso peggiore è \T{n} in quanto scorre tutti i numeri da 1 ad n per poi effettuare 
-        un'operazione \T(1). \\
-        Esiste una versione \T(1) per effettuare il calcolo col metodo di Gauss: $\frac{n\left(n\right)}{2}$
+        un'operazione \T{1}. \\
+        Esiste una versione \T{1} per effettuare il calcolo col metodo di Gauss: $\frac{n\left(n\right)}{2}$
     \subsection{2}
         
         

@@ -3,6 +3,9 @@
 \usepackage{float}
 \usepackage{tabularx, ragged2e}
 \newcommand{\n}[1]{\overline{#1}}
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 \title{%
     Progettazione di sistemi digitali \\    
     \large Corso del professore Pontarelli
@@ -12,35 +15,35 @@
 \maketitle
 \tableofcontents
 \newpage
-\section{Legenda}
-    \begin{itemize}
-        \item \textbf{a}: cifra
-        \item \textbf{i}: posizione della cifra all'interno della stringa
-        \item \textbf{N}: lunghezza della stringa
-    \end{itemize}
-\section{Potenze del due}
-    \begin{itemize}
-        \item $2^0 = 1$
-        \item $2^1 = 2$
-        \item $2^2 = 4$
-        \item $2^3 = 8$
-        \item $2^4 = 16$
-        \item $2^5 = 32$
-        \item $2^6 = 64$
-        \item $2^7 = 128$
-        \item $2^8 = 256$
-        \item $2^9 = 512$
-        \item $2^{10} = 1024$
-        \item $2^{11} = 2048$
-        \item $2^{12} = 4096$
-        \item $2^{13} = 8192$
-        \item $2^{14} = 16384$
-        \item $2^{15} = 32768$
-        \item $2^{16} = 65536$
-        \item $2^{32} = 4294967296$
-        \item $2^{64} = 18446744073709551616$
-    \end{itemize}
 \section{Binary numeric system}
+    \subsection{Legenda}
+        \begin{itemize}
+            \item \textbf{a}: cifra
+            \item \textbf{i}: posizione della cifra all'interno della stringa
+            \item \textbf{N}: lunghezza della stringa
+        \end{itemize}
+    \subsection{Potenze del due}
+        \begin{itemize}
+            \item $2^0 = 1$
+            \item $2^1 = 2$
+            \item $2^2 = 4$
+            \item $2^3 = 8$
+            \item $2^4 = 16$
+            \item $2^5 = 32$
+            \item $2^6 = 64$
+            \item $2^7 = 128$
+            \item $2^8 = 256$
+            \item $2^9 = 512$
+            \item $2^{10} = 1024$
+            \item $2^{11} = 2048$
+            \item $2^{12} = 4096$
+            \item $2^{13} = 8192$
+            \item $2^{14} = 16384$
+            \item $2^{15} = 32768$
+            \item $2^{16} = 65536$
+            \item $2^{32} = 4294967296$
+            \item $2^{64} = 18446744073709551616$
+        \end{itemize}
     \subsection{Il sistema binario}
         Il sistema binario è un sistema di rappresentazione dei numeri in base
         \textbf{2}, dove le uniche cifre disponibili sono \textbf{0} e \textbf{1} 
@@ -414,19 +417,6 @@
                     \includegraphics[width=2cm,height=1cm]{xnor.png}
                 \end{figure}
             \end{center}
-    \subsection{Circuiti logici combinatori}
-    \begin{itemize}
-        \item \textbf{Memoryless}
-        \item No percorsi \textbf{ciclici}
-        \item Ogni nodo è un input o si collega a un \textbf{solo} output
-        \item Out = $f$(Input)
-        \item Composti da sottocircuiti combinatori
-    \end{itemize}
-    \subsection{Circuito logico sequenziale}
-    \begin{itemize}
-        \item Ha un \textbf{internal state}
-        \item Out, State = $f$(Input, State)
-    \end{itemize}
     \subsection{Descrivere circuito come operazioni logiche}
         \subsubsection{Sum-of-products form}
         \begin{enumerate}
@@ -534,6 +524,321 @@
             \begin{center}
                 \includegraphics[width=\textwidth]{path.jpg}
             \end{center}
+\newpage
+\section{Circuiti logici combinatori}
+    \begin{itemize}
+        \item \textbf{Memoryless}
+        \item No percorsi \textbf{ciclici}
+        \item Ogni nodo è un input o si collega a un \textbf{solo} output
+        \item Out = $f$(Input)
+        \item Composti da sottocircuiti combinatori
+    \end{itemize}
+\section{Circuiti logici sequenziali}
+    \begin{itemize}
+        \item \textbf{Memoria short-term}, ovvero finchè il circuito rimane alimentato
+        \item Presentano uno \textbf{Stato}
+        \item Out = $f$(Input, State)
+    \end{itemize}
+    \subsection{Componenti dei circuiti bistabili}
+        \subsubsection{Circuiti bistabili}
+            Sono il blocco elementare dei circuiti sequenziali. \\
+            Presentano 2 stati, $Q$ e $\n{Q}$, ma nessun input. \\
+        \subsubsection{Latch S-R}
+            \begin{center}
+                \begin{figure}[h]
+                    \includegraphics[width=0.5\textwidth, height=4cm]{latchsr.png}
+                    \includegraphics[width=.5\textwidth, height=4cm]{latchsr2.png}
+                \end{figure}
+            \end{center}
+            \begin{itemize}
+                \item S = 1, R = 0 $\Longrightarrow$ Q = 1
+                \item S = 0, R = 1 $\Longrightarrow$ Q = 0
+                \item S = 0, R = 0 $\Longrightarrow$ Q = Q$_{prev}$
+                \item S = 1, R = 1 $\Longrightarrow$ Q = Invalid (da evitare)
+            \end{itemize}
+        \subsubsection{Latch D}
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[width=\textwidth, height=4cm]{latchd.png}
+                \end{figure}
+            \end{center}
+            Input:
+            \begin{itemize}
+                \item \textbf{Clock} (CLK): definisce quando l'output deve cambiare (0 hold, 1 trasparente rispetto a D)
+                \item D: Il valore da memorizzare
+            \end{itemize}
+            Funzionamento:
+            \begin{itemize}
+                \item CLK = 0, D = X $\Longrightarrow$ Q = Q$_{prev}$
+                \item CLK = 1 $\Longrightarrow$ Q = D
+            \end{itemize}
+        \subsubsection{Problematiche dei latch}
+            I latch presentano la problematica che, all'interno dello stesso periodo
+            di clock, \textbf{l'output può variare più volte in tempi brevissimi, aumentando lo 
+            spreco d'energià e la complessità nella progettazione del circuito}. \\
+            La soluzione sono i flip-flop, dispositivi \textbf{edge-triggered}, nei quali lo stato di trasparenza occorre 
+            in corrispondenza del \textbf{fronte di salita}(o discesa) del CLK. \\
+            Nel nostro caso li consideriamo tutti sul fronte di salita
+        \subsubsection{Flip-Flop D}
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[width=0.5\textwidth, height=4cm]{flipflopd.png}
+                    \includegraphics[width=0.5\textwidth, height=4cm]{flipflopd2.png}
+                \end{figure}
+            \end{center}
+            \begin{itemize}
+                \item CLK = 0, CLK$_{prev}$ = X, D = X $\Longrightarrow$ Q = Q$_{prev}$
+                \item CLK = 1, CLK$_{prev}$ = 1, D = X $\Longrightarrow$ Q = Q$_{prev}$
+                \item CLK = 1, CLK$_{prev}$ = 0 $\Longrightarrow$ Q = D
+            \end{itemize}
+        \subsubsection{Enabled F-F}
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[width=0.67\textwidth, height=4cm]{flipflope.png}
+                    \includegraphics[width=0.33\textwidth, height=4cm]{flipflope2.png}
+                \end{figure}
+            \end{center}
+            \begin{itemize}
+                \item EN = 0 $\Longrightarrow$ Funziona come F-F D
+                \item EN = 1 $\Longrightarrow$ Q = Q$_{prev}$
+            \end{itemize}
+        \subsubsection{Resettable e Settable F-F}
+            Queste 2 tipologie di F-F sono usate per circuiti nei quali è importante 
+            partire da uno stato noto dopo l'accensione del sistema (es: centrali elettriche). \\
+            Possono essere:
+            \begin{itemize}
+                \item Sincroni: l'output cambia quando il segnale di set/reset = 1 e CLK è sul fronte di salita/discesa
+                \item Asincroni: l'output cambia quando il segnale di set/reset = 1, senza considerare CLK. 
+                    Richiedono un cambiamento del circuito interno del F-F.
+            \end{itemize}
+            \subsubsubsection{Resettable F-F}
+                \begin{center}
+                    \begin{figure}[H]
+                        \includegraphics[width=0.5\textwidth, height=4cm]{flipflopr.jpg}
+                        \includegraphics[width=0.5\textwidth, height=4cm]{flipflopr2.png}
+                    \end{figure}
+                \end{center}
+                \begin{itemize}
+                    \item R = 0 $\Longrightarrow$ Funziona come F-F D
+                    \item R = 1 $\Longrightarrow$ Q = 0
+                \end{itemize}
+            \subsubsubsection{Settable F-F}
+                \begin{center}
+                    \begin{figure}[H]
+                        \includegraphics[width=0.5\textwidth, height=4cm]{flipflops.jpg}
+                        \includegraphics[width=0.5\textwidth, height=4cm]{flipflops2.png}
+                    \end{figure}
+                \end{center}
+                \begin{itemize}
+                    \item S = 0 $\Longrightarrow$ Funziona come F-F D
+                    \item S = 1 $\Longrightarrow$ Q = 1
+                \end{itemize}
+        \subsubsection{Registri}
+            I \textbf{registri} sono \textbf{batterie di F-F}
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[width=\textwidth]{registri.png}
+                \end{figure}
+            \end{center}
+    \subsection{Regole della progettazione dei circuiti logici sequenziali sincroni}
+        \begin{itemize}
+            \item \textbf{Spezzare} tutte le path cicliche con almeno 1 registro, 
+                che memorizza \textbf{lo stato del sistema}, per path
+            \item Sincronizzare sul CLK: lo stato viene aggiornato sul \textbf{fronte di salita}(o discesa) del CLK
+            \item Tutti i registri sono \textbf{sincronizzati sullo stesso CLK}
+            \item E' composto da almeno \textbf{1 registro} e \textbf{circuiti combinatori}
+        \end{itemize}
+    \subsection{Macchine a stati finiti}
+        Le macchine a stati finiti (\textbf{FSM}), sono circuiti composti da 1
+        \textbf{registro di stato} e \textbf{due circuiti combinatori}, 1 che 
+        \textbf{calcola il prossimo stato} sulla base degli input e dello stato corrente,
+        e uno che \textbf{calcola gli output}. \\
+        Si dividono in FSM di Moore e FSM di Mealy.
+        \subsubsection{FSM di Moore}
+            $$S^{'} = f_{S}\left(I, S\right)$$
+            $$Out = f_{Out}\left(S\right)$$
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[width=\textwidth, height=3cm]{moorefsm.png}
+                \end{figure}
+            \end{center}
+        \subsubsection{FSM di Mealy}
+            $$S^{'} = f_{S}\left(I, S\right)$$
+            $$Out = f_{Out}\left(I, S\right)$$
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[width=\textwidth, height=3cm]{mealyfsm.png}
+                \end{figure}
+            \end{center}
+        \subsubsection{Progettazione di una FSM}
+            \begin{enumerate}
+                \item Definiamo gli In e gli Out
+                \item Disegnamo il diagramma di transizione:
+                    \begin{itemize}
+                        \item Nodi: rappresentano lo stato, all'interno contengono 
+                            i valori dell'output in quello stato
+                        \item Archi: Transizione. Possono presentare gli input 
+                            che inducono in quello stato (non sempre presenti)
+                    \end{itemize}
+                \item Costruiamo la tabella di transizione
+                \item Costruiamo la tabella di transizione codificata
+                \item Definiamo l'equazioni degli stati codificati
+                \item Costruiamo l'output table codificata
+                \item Definiamo l'equazioni degli output codificati
+                \item Costruiamo il circuito
+                \item Costruiamo il diagramma del tempo
+                \end{enumerate}
+        \subsubsection{Esempio dei semafori}
+            \subsubsubsection{Problema}
+                Abbiamo un incrocio gestito da 2 coppie di semafori, che
+                regolano il traffico sulla strada orizzontale A e su quella verticale B,
+                e che presenta 2 sensori di traffico, per vedere se sono presenti macchine
+                sulle strade. \\
+                E' permesso il passaggio su una sola strada alla volta.
+                Procediamo a progettare la FSM.
+            \subsubsubsection{Input e Output}
+                Gli input sono i due sensori, T$_A$ e T$_B$, che assumono il valore
+                di 0 quando la strada è libera e 1 quando è occupata, gli output sono
+                L$_A$ e L$_B$, che assumono i valori R, Y, G (sono quindi due coppie di valori 
+                binari per output).
+            \subsubsection{Diagramma di transizione}
+                \begin{itemize}
+                    \item 0) Stato di partenza (reset state): L$_A$ = G, L$_B$ = R. Lo stato è mantenuto finchè c'è traffico sulla strada A
+                    \item 1) Quando non c'è più traffico sulla strada A, passiamo allo stato dove L$_A$ = Y, L$_B$ = R.
+                    \item 2) Al prossimo CLK passiamo allo stato con L$_A$ = R, L$_B$ = G, mantenuto finchè c'è traffico sulla strada B
+                    \item 3) Quando non c'è più traffico sulla strada B, passiamo allo stato dove L$_A$ = R, L$_B$ = Y
+                    \item 0) Al prossimo CLK torniamo allo stato 0
+                \end{itemize}
+                Il diagramma ottenuto è:
+                \begin{center}
+                    \begin{figure}[H]
+                        \includegraphics[width=\textwidth, height=5cm]{fsmd.png}
+                    \end{figure}
+                \end{center}
+            \subsubsubsection{Tabella di transizione}
+                \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                        \hline
+                        Current State & T$_A$ & T$_B$ & Next State \\
+                        \hline
+                        S$_0$ & 0 & X & S$_1$ \\
+                        \hline
+                        S$_0$ & 1 & X & S$_0$ \\
+                        \hline
+                        S$_1$ & X & X & S$_2$ \\
+                        \hline
+                        S$_2$ & X & 0 & S$_3$ \\
+                        \hline
+                        S$_2$ & X & 1 & S$_2$ \\
+                        \hline
+                        S$_3$ & X & X & S$_0$ \\
+                        \hline
+                    \end{tabular}
+                \end{center}
+            \subsubsubsection{Tabella di transizione codifica}
+                Tabella di codifica degli stati:
+                \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                        \hline
+                        State & Encoding \\
+                        \hline
+                        S$_0$ & 00 \\
+                        \hline
+                        S$_1$ & 01 \\
+                        \hline
+                        S$_2$ & 10 \\
+                        \hline
+                        S$_3$ & 11 \\
+                        \hline
+                    \end{tabular}
+                \end{center}
+                Tabella di transizione codificata:
+                \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|c|}
+                        \hline
+                        ES$_0$ & ES$_1$ & T$_A$ & T$_B$ & ES$^{'}_0$ & ES$^{'}_1$ \\
+                        \hline
+                        0 & 0 & 0 & X & 0 & 1 \\
+                        \hline
+                        0 & 0 & 1 & X & 0 & 0 \\
+                        \hline
+                        0 & 1 & X & X & 1 & 0 \\
+                        \hline
+                        1 & 0 & X & 0 & 1 & 1 \\
+                        \hline
+                        1 & 0 & X & 1 & 1 & 0 \\
+                        \hline
+                        1 & 1 & X & X & 0 & 0 \\
+                        \hline
+                    \end{tabular}
+                \end{center}
+            \subsubsection{Equazioni stati codificato}
+                $$ES^{'}_0 = ES_0 \oplus ES_1$$
+                $$ES^{'}_1 = \n{ES_0} * \n{ES_1} * \n{T_A} + \n{ES_0}ES_1\n{T_B}$$
+            \subsubsubsection{Tabella di output codificata}
+                Tabella di codifica degli output
+                \begin{center}
+                    \begin{tabular}{|c|c|}
+                        \hline
+                        Out & Encoding \\
+                        \hline
+                        G & 00 \\
+                        \hline
+                        Y & 01 \\
+                        \hline
+                        R & 10 \\
+                        \hline
+                    \end{tabular}
+                \end{center}
+                Tabella di output codificata:
+                \begin{center}
+                \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    ES$_0$ & ES$_1$ & L$_{A0}$ & L$_{A1}$ & L$_{B0}$ & L$_{B1}$ \\
+                    \hline
+                    0 & 0 & 0 & 0 & 1 & 0 \\
+                    \hline
+                    0 & 1 & 0 & 1 & 1 & 0 \\
+                    \hline
+                    1 & 0 & 1 & 0 & 0 & 0 \\
+                    \hline
+                    1 & 1 & 1 & 0 & 0 & 1 \\
+                    \hline
+                \end{tabular}
+                \end{center}
+            \subsubsubsection{Equazioni output codificati}
+                $$L_{A0} = ES_0$$
+                $$L_{A1} = \n{ES_0}ES_1$$
+                $$L_{B0} = \n{ES_0}$$
+                $$L_{B1} = ES_0ES_1$$
+            \subsubsubsection{Circuito}
+                \begin{center}
+                    \begin{figure}[H]
+                        \includegraphics[width = \textwidth, height = 5cm]{fsmc.png}
+                    \end{figure}
+                \end{center}
+            \subsubsubsection{Tabella del tempo}
+                \begin{center}
+                    \begin{figure}[H]
+                        \includegraphics[width = \textwidth, height = 5cm]{fsmt.png}
+                    \end{figure}
+                \end{center}
+
+            
+
+
+
+                
+
+
+
+    
+
+     
+
+         
         
+
+
 \end{document}
 

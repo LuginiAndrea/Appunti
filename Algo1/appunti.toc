@@ -20,6 +20,7 @@
 \contentsline {subsubsection}{Metodo di sostituzione}{6}{}%
 \contentsline {subsubsection}{Metodo iterativo}{7}{}%
 \contentsline {subsubsection}{Metodo dell'albero}{8}{}%
-\contentsline {section}{\numberline {0.8}Esercizi}{8}{}%
-\contentsline {subsection}{\numberline {0.8.1}1}{8}{}%
-\contentsline {subsection}{\numberline {0.8.2}2}{8}{}%
+\contentsline {subsubsection}{Metodo del teorema principale}{8}{}%
+\contentsline {section}{\numberline {0.8}Esercizi}{9}{}%
+\contentsline {subsection}{\numberline {0.8.1}1}{9}{}%
+\contentsline {subsection}{\numberline {0.8.2}2}{9}{}%
