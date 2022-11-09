@@ -272,8 +272,10 @@
         $$\Longrightarrow |\frac{n+1}{n-1} - 1| \leq \epsilon \Longrightarrow \geq -\epsilon \, \forall n \in \mathbf{N}$$
         $$\Longrightarrow \frac{n+1}{n-1} < 1 + \epsilon \Longrightarrow n+1 \leq n + n\epsilon -1 - \epsilon$$
         $$\Longrightarrow 2 + \epsilon \leq n\epsilon \Longrightarrow n \geq \frac{2}{\epsilon} + 1$$
+        \subsubsection{Successioni limitate a $e$}
+            Data la successione divergente $a_n$: $\lim_{n \to \infty} \left(1+\frac{1}{a_n}\right)^n = e$
     \subsection{Algebra dei limiti}
-        $\lim_{n \to n_0} a_n = a \, \, \lim_{n to \infty} b_n = b$ \\
+        $\lim_{n \to n_0} a_n = a \, \, \lim_{n \to \infty} b_n = b$ \\
         $\lim_{n \to n_0} a_n + b_n = a + b$ \\
         $\lim_{n \to n_0} a_n * b_n = a * b$ \\
         $\lim_{n \to n_0} a_n^{b_n} = a^b$ \\
@@ -288,6 +290,34 @@
     \subsection{Teorema dei carabinieri}
         $a_n \leq b_n \leq c_n$
         $a = c \Longrightarrow a = b = c$
+    \subsection{Stime asintotiche}
+        Prese due successioni che tendono a $\infty$/$0$, considerando 
+        $$\lim_{n \to \infty}\frac{a_n}{b_n} = $$
+    \begin{itemize}
+        \item $0$: $a_n$ è un infinito/infinitesimo di ordine inferiore/superiore a $b_n$
+        \item $l, \, \textrm{finito e } \neq 0$: $a_n$ e $b_n$ sono dello stesso ordine. \\
+        \item $\pm \infty$: $a_n$ è un infinito/infinitesimo di ordine superiore/inferiore a $b_n$
+        \item $\nexists$: $a_n$ e $b_n$ non sono confrontabili.
+    \end{itemize}
+    \subsubsection{Ordine delle stime asintotiche}
+        $$\log_{\alpha}n < n^{\alpha} < \alpha^n < n! < n^n$$ 
+    \subsubsection{$a_n \sim b_n$}
+        Nel caso analizzato, quando $l = 1$, diciamo che $a_n$ e $b_n$ sono 
+        asintotiche ($a_n \sim b_n$). \\
+        \begin{itemize}
+            \item $a_n \sim b_n \Longrightarrow$ le due successioni hanno lo stesso comportamento
+            \item $a_n \sim b_n \sim c_n \Longrightarrow a_n \sim c_n$
+            \item $a_n \sim a^{'}_n, b_n \sim b^{'}_n, c_n \sim c^{'}_n \Longrightarrow 
+                \frac{a_nb_n}{c_n} \sim \frac{a^{'}_nb^{'}_n}{c^{'}_n}$
+        \end{itemize}
+    \subsubsection{Criterio del rapporto}
+    $$\lim_{n \to \infty} \frac{a_{n+1}}{a_n} = $$
+    \begin{itemize}
+        \item $l < 1$: $\lim_{n \to \infty}a_n = 0$
+        \item $l > 1$: $\lim_{n \to \infty}a_n = \infty$
+        \item $= 1$: non possiamo concludere nulla
+    \end{itemize}
+
         
 
 
