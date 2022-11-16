@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \title{Calcolo differenziale}
 
 \begin{document}
@@ -236,7 +237,143 @@
             \item $|f(x)|$: ribaltamento su asse y degli $y < 0$
             \item $f(|x|)$: Ribaltamento su asse x degli $x < 0$
         \end{itemize}
-\section{Limiti}
+    \subsection{Funzioni continue}
+        \subsubsection{Criterio di continuità}
+            Riferirsi al capitolo presente nei limiti di funzioni
+        \subsubsection{Teorema di esistenza degli zeri}
+            $$f:\left[a, b\right] \longrightarrow \mathbf{R}, \, f \textrm{ continua }$$
+            $$f\left(a\right) * f\left(b\right) < 0 \Longrightarrow \exists x_0 \in 
+                \left(a, b\right) \textrm{ t.c. } f\left(x_0\right) = 0$$
+            \subsubsubsection{Dimostrazione}
+                Ipotizziamo $f\left(a\right) < 0 \wedge f\left(b\right) > 0$. \\
+                Usiamo \textbf{l'algoritmo di biezione} per arrivare a $x_0$ t.c. $f\left(x_0\right) = 0$. \\
+                \begin{enumerate}
+                    \item $c = \frac{a + b}{2}$
+                    \item 3 casi:
+                        \begin{enumerate}
+                            \item $f\left(c\right) > 0 \Longrightarrow x_0 \in \left[a, c\right]$
+                            \item $f\left(c\right) = 0 \Longrightarrow x_0 = c$. Abbiamo dimostrato che esiste $x_0$
+                            \item $f\left(c\right) > 0 \Longrightarrow x_0 \in \left[c, b\right]$
+                        \end{enumerate}
+                    \item Applico ricorsivamente l'algoritmo sul nuovo intervallo ottenuto al passo 2
+                \end{enumerate}
+                Dobbiamo quindi dimostrare che, eventualmente, questo procedimento arrivi al caso 2 del punto 2. \\
+                Prendiamo ora la successione di tutti gli estremi sinistri costruiti fino al punto n degli intervalli (tutte le $a$) e chiamiamola
+                $\{a_n\}_n$ e la successione di tutti gli estremi destri (tutte le $b$) e chiamiamola $\{b_n\}_n$. \\
+                Per come lo costruiamo, sappiamo che:
+                \begin{itemize}
+                    \item $a_{n} > a_{n-1}, \, a_n < b \forall n$
+                    \item $b_{n} < b_{n-1}, \, b_n > a \forall n$
+                    \item $\lim_{n \to \infty} a_n = sup_a, \, \lim_{n \to \infty} b_n = inf_b, \, inf_b \geq sup_a$
+                    \item $b_{n} - a_{n} = \frac{b_{n-1} - a_{n-1}}{2}$
+                \end{itemize}
+                L'ultimo punto in particolare ci permette di concludere che:
+                $$\lim_{n \to \infty} b_n - a_n = \frac{b - a}{2^n} = 0 \Longrightarrow \lim_{n \to \infty} b_n = \lim_{n \to \infty} a_n$$
+                $$\Longrightarrow sup_a = inf_b$$
+                Quindi, posto $c = sup_a = inf_b$, volendo dimostrare che $f\left(c\right) = 0$ per l'algoritmo di biezione, 
+                partiamo dalle cose che sappiamo:
+                $$f\left(a_n\right) * f\left(b_n\right) \leq 0$$
+                $$\lim_{n to \infty} f\left(a_n\right) * f\left(b_n\right) = f\left(c\right)^2 \geq 0 \textrm { in quanto quadrato }$$
+                $$\Longrightarrow f\left(c\right)^2 \geq 0 \wedge f\left(c\right)^2 \leq 0 \Longrightarrow f\left(c\right)^2 = 0$$
+                $$\Longrightarrow f\left(c\right) = 0 \textrm{ c.v.d. }$$
+            \subsubsubsection{I Corollario}
+                $$f:\left[a, b\right] \longrightarrow \mathbf{R}, \, f \textrm{ continua }$$
+                $$f\left(a\right) \neq f\left(b\right) \Longrightarrow \forall y \in 
+                    \left[f\left(a\right), f\left(b\right)\right] \exists x_0 \in \left[a, b\right] 
+                    \textrm{ t.c. } f\left(x_0\right) = y$$
+            \subsubsubsection{II Corollario}
+                $$f: \left[a, b\right] \longrightarrow \mathbf{R}, \, f \textrm{ continua e monotona}$$
+                $$f\left(a\right) * f\left(b\right) < 0 \Longrightarrow 
+                    \exists! x_0 \in \left[a, b\right] \textrm{ t.c. } f\left(x_0\right) = 0$$
+        \subsubsection{Teorema di Weiestrass}
+            $$f: \left[a, b\right], a \neq -\infty, b \neq +\infty, \longrightarrow \mathbf{R}, \, f \textrm{ continua }$$
+            $$\exists m, M \textrm{ di } f \textrm{ in } \left[a, b\right]$$
+            \subsubsubsection{Corollario}
+                $$f: \left[a, b\right] \longrightarrow \mathbf{R}, \, f \textrm{ continua }$$
+                $$\forall y \in \left[m, M\right] \exists x_0 \in \left[a, b\right] 
+                    \textrm{ t.c. } f\left(x_0\right) = y$$
+        \subsubsection{Teorema del valore intermedio avanzato}
+            $$f: \left[a, b\right] \longrightarrow \mathbf{R}, f \textrm{ continua }$$
+            $$\Longrightarrow f\left(\left[a,b\right]\right) = \left[m, M\right]$$
+        \subsubsection{Algebra delle funzioni continue}
+            $$f, g: \left[a, b\right], x_0 \in \left[a, b\right], \, f, g \textrm{ continue } \Longrightarrow$$
+            \begin{itemize}
+                \item $f\left(x_0\right) \pm g\left(x_0\right)$ continua
+                \item $f\left(x_0\right) * g\left(x_0\right)$ continua
+                \item $f\left(x_0\right) / g\left(x_0\right)$ continua purchè $g\left(x_0\right) \neq 0$
+            \end{itemize}
+        \subsubsection{Teorema del cambio di variabile}
+        $$f, g, \, f \circ g \textrm{ ben definita per }x \rightarrow x_0$$
+        $$\lim_{x \to x_0} g\left(x\right) = t_0, \exists lim_{t \to t_0} f\left(t\right) = l$$
+        $$\textrm{Inoltre, nel caso } f \textrm{ sia non continua in } t_0 \textrm{ o }t_0 = \pm \infty, 
+            g\left(x_0\right) \neq t_0$$
+        $$\Longrightarrow \lim_{x \to x_0} f\left(g\left(x\right)\right) = \lim_{t \to t_0} f\left(t\right)$$
+        \subsubsection{Continuità della funzione composta}
+            $$g: \left[a, b\right], f: \left[c, d\right], x_0 \in \left[a, b\right], g\left(x_0\right) \in \left[c, d\right]$$
+            $$f, g \textrm{ continue } \Longrightarrow f\left(g\left(x_0\right)\right): 
+                \left[a, b\right] \textrm{ e continua in }x_0$$
+        \subsubsection{Teorema di esistenza della radice i-esima}
+            $$\forall y \in \mathbf{R}, n \in \mathbf{N}, \textrm{ t.c. } y > 0, n \geq 1$$
+            $$\Longrightarrow \exists! x \in \mathbf{R}, x > 0 \textrm { t.c. } x^n = y$$
+            \subsubsubsection{Dimostrazione}
+            $$g\left(x\right) = x, \, \textrm{ continua }, f\left(x\right) = x^n = \Pi_{1}^{n}g\left(x\right)
+                \Longrightarrow, f\left(x\right) \textrm{ continua }$$
+            $$ \left\{\begin{matrix} 
+                    1^n \leq y \leq y^n & y \geq 1, \, x_1 = 1, x_2 = y \\
+                    y^n \leq y \leq 1^n & y < 1, \, x_1 = y, x_2 = 1 \\
+                \end{matrix} \right\}
+                f\left(x\right) \textrm{ monotona } \in \left[x_1, x_2\right] \Longrightarrow x_1^n = m, x_2^n = M
+            $$
+            $$\Longrightarrow \textrm{ per il teorema dei valori intermedi } \exists x_0 \in \left[x_1, x_2\right]
+                \textrm{ t.c. } f\left(x_0\right) = x_0^n = y$$
+    \subsection{Funzioni monotone}
+        \subsubsection{Teorema di monotonia}
+            $$f:\left(a, b\right), f \textrm{ monotona }$$
+            $$\Longrightarrow \forall c \in \left(a, b\right) \exists \textrm{ finiti limite 
+            destro e sinistro per } x \rightarrow c \textrm{ e limite sinistro/destrp } per x \rightarrow a/b$$
+            \subsubsubsection{Dimostrazione}
+                $$S = sup{f\left(x\right); \forall x \in \left(a, c\right)}, S \textrm{ finito per proprietà dell'estremo superiore in quanto }
+                f\left(c\right) \textrm{ maggiorante }$$
+                Dobbiamo provare che
+                $$\lim_{x \to c^-} f\left(x\right) = S$$
+                ovvero che, presa la successione $x_n \in \left(a, c\right)\textrm{ t.c. } x_n \rightarrow c$,
+                $$\forall\epsilon > 0, S-\epsilon < f\left(x_n\right) < S+\epsilon$$
+                $$S > f\left(x\right) \forall x \in \left(a, c\right) \Longrightarrow S+\epsilon > f\left(x_n\right) \forall x_n$$
+                $$S > S-\epsilon \Longrightarrow \exists x_0 \in \left(a, c\right) \textrm{ t.c. } f\left(x_0\right) > S-\epsilon$$
+                $$\Longrightarrow f\left(x\right) \geq S-\epsilon \forall x \in \left(x_0, c\right) \Longrightarrow f\left(x_n\right) \geq S-\epsilon \textrm{ definitivamente }$$
+                $$\Longrightarrow \lim_{x \to c^-} f\left(x\right) = S$$
+                Analogamente possiamo fare con $\lim_{x \to c^+} f\left(x\right)$. \\
+                Per i limiti agli estremi possiamo usare lo stesso procedimento, ricordando però che $S, s$ non 
+                sono necessariamente finiti in quanto $f\left(b/a\right)$ non sono maggioranti/minoranti in quanto 
+                la funzione non è definita in $a, b$. In questi casi, possiamo procedere ragionando che
+                $$\forall K > 0 \exists x_0 \in \left(a, b\right) \textrm{ t.c. } f\left(x_0\right) \geq 0$$
+                $$\Longrightarrow f\left(x\right) > K \forall x \in \left(x_0, b\right)$$
+                Presa una successione $x_n \rightarrow b, x_n \in \left(x_0, b\right)$
+                $$\Longrightarrow f\left(x_n\right) > K \textrm{ definitivamente }$$
+                $$\Longrightarrow \lim_{x \to b^-} f\left(x\right) = \infty$$
+                Nel caso la funzione sia decrescente anzichè crescente cambiare in modo appropriato.
+            \subsubsubsection{Corollario}
+                $$f:\left(a, b\right), f \textrm{ monotona }$$
+                Se esistono dei punti di discontinuità in $\left(a, b\right)$ questi
+                sono necessariamente \textbf{punti di salto}
+    \subsection{Teorema di invertibilità della funzione continua}
+        $$f: \left[a, b\right], f \textrm{ continua }$$
+        $$\Longrightarrow \exists f^{-1}: \left[a, b\right], f^{-1}\textrm{ strettamente monotona e continua } 
+            \Longleftrightarrow f \textrm{ strettamente monotona }$$
+        \subsubsection{Dimostrazione}
+            \subsubsubsection{Dimostrazione prima parte}
+                Ipotizziamo per assurdo che $f$ non sia strettamente monotona. Vuol dire che
+                $$\exists x_0 < x_1 < x_2 \in \left[a, b\right] \textrm{ t.c. } f\left(x_0\right) < f\left(x_1\right) > f\left(x_2\right)$$
+                Per il teorema dei valori intermedi
+                $$\exists c \in \left(x_0, x_1\right) \textrm{ t.c. } f\left(c\right) = f\left(x_2\right) \wedge c \neq x_2$$
+                La funzione non è quindi invertibile
+            \subsubsubsection{Dimostrazione seconda parte}
+                Prendiamo $f^{-1}$ che sappiamo essere monotona ed ipotizziamo non sia continua. 
+                Per il teorema di monotonia sappiamo che i suoi punti di discontinuità in $f^{-1}$ 
+                sono punti di salto, e quindi l'immagine di $f^{-1}$ non sarebbe un intervallo.
+                Impossibile in quanto, essendo $f$ definita in un intervallo, l'immagine di 
+                $f^{-1}$ deve essere un intervallo
+\section{Limiti di successioni}
     \subsection{Disuguaglianza di bernoulli}
         $$n \geq 0,\, x > -1, \Longleftrightarrow \left(1+x\right)^n \geq 1 + nx$$
     \subsection{Limiti convergenti}
@@ -317,11 +454,49 @@
         \item $l > 1$: $\lim_{n \to \infty}a_n = \infty$
         \item $= 1$: non possiamo concludere nulla
     \end{itemize}
-
-        
-
-
-
+\section{Limiti di funzioni}
+    \subsection{Definizione tramite limiti di successioni}
+        $$x_0 \in I \subset \mathbf{R}, \, l \in \mathbf{R} \cup \{\pm\infty\}$$
+        $$f: I\backslash\{x_0\} \longrightarrow \mathbf{R}, \textrm{ se }$$
+        $$\forall \textrm{ successione } \{x_n\} \in I\backslash\{x_0\} \textrm { t.c. }
+            \lim_{n \to \infty} x_n = x_0, \textrm { si ha che } \lim_{n \to \infty} f\left(x_n\right) = l $$
+        $$ \Longrightarrow \lim_{x \to x_0} f\left(x\right) = l $$
+    \subsection{Limite da destra e da sinistra}
+        $$\lim_{x \to x_0^{\pm}} f\left(x\right) = l$$ studia il comportamento
+        della funzione da destra/sinistra.
+    \subsection{Criterio d'esistenza del limite}
+        Il limite esiste $
+            \Longleftrightarrow \lim_{x \to x_0^+} f\left(x\right) = \lim_{x \to x_0^-} f\left(x\right)
+        $
+    \subsection{Teorema di unicità del limite}
+        $$\exists \lim_{x \to x_0} f\left(x\right) = l \Longrightarrow \exists! \lim_{x \to x_0} f\left(x\right) = l$$
+    \subsection{Limite per eccesso o per difetto}
+        $\exists I\backslash\{x_0\} \textrm{ t.c. } \forall x \in I f\left(x\right) \geq/\leq l \Longrightarrow 
+            \lim_{x \to x_0} f\left(x\right) = l$ per eccesso/difetto 
+    \subsection{Asintoti}
+        Gli asintoti sono rette che approssimano il comportamento della funzione in determinati punti, o verso gli estremi,della stessa.
+        I limiti possono tendere da sinistra/destra/bilateralmente
+        \subsubsection{Asintoto orizzontale}
+            $$\lim_{x \to \pm \infty} f\left(x\right) = l \Longrightarrow \exists \textrm{ asintoto orizzontale } y = l \in \mathbf{R}$$
+        \subsubsection{Asintoto verticale}
+            $$\lim_{x \to x_0} f\left(x\right) = \pm \infty \Longrightarrow \exists \textrm{ asintoto verticale } x = \pm \infty$$
+        \subsubsection{Asintoto obliquo}
+            Se $f$ presenta limiti infiniti all'infinito, può capitare che presenti limiti obliqui.
+            $$\lim_{x \to \pm \infty} \frac{f\left(x\right)}{x} = m, \, lim_{x \to \pm \infty} |f\left(x\right) - mx| = q$$
+    \subsection{Continuità di una funzione tramite limite}
+        $$f: I \longrightarrow \mathbf{R}$$
+        $$\forall x_0 \in I \lim_{x \to x_0} f\left(x\right) = f\left(x\right) \Longrightarrow \textrm{ f è continua in }I$$
+    \subsection{Punti di discontinuità}
+        Se $lim_{x \to x_0^+} f\left(x\right) \neq lim_{x \to x_0^-} f\left(x\right) \Longrightarrow$ \\
+        $\exists \textrm{ punto di salto in } x_0, \, \textrm{ salto in }x_0 = \lim^+ - \lim^-$
+\newpage
+\section{Limiti notevoli}
+    \begin{center}
+        \hspace*{-1.85in}
+        \includegraphics[width=2\textwidth]{limiti-notevoli1.jpg}
+        \hspace*{-1.85in}
+        \includegraphics[width=2\textwidth]{limiti-notevoli2.jpg}
+    \end{center}
 \end{document}
 
 

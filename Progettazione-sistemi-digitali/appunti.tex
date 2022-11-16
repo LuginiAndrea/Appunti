@@ -663,6 +663,13 @@
                 \end{figure}
             \end{center}
         \subsubsection{FSM di Mealy}
+        \subsubsection{Componenti fondamentali}
+            \begin{itemize}:
+                \item Input primari
+                \item Next State Logic: circuito combinatorio che calcola il prossimo stato
+                \item State Register: batteria di F-F per memorizzare lo stato codificato
+                \item Output Logic: circuito combinatorio che calcola gli output
+            \end{itemize}
             $$S^{'} = f_{S}\left(I, S\right)$$
             $$Out = f_{Out}\left(I, S\right)$$
             \begin{center}
@@ -681,7 +688,10 @@
                             che inducono in quello stato (non sempre presenti)
                     \end{itemize}
                 \item Costruiamo la tabella di transizione
-                \item Costruiamo la tabella di transizione codificata
+                \item Costruiamo la tabella di transizione codificata 
+                    (la codifica può essere binaria, che richiede l'uso di $\log_2#S$ 
+                    F-F, o one-hot, che richiede $#S$ F-F ma che porta solitamente ad 
+                    avere i circuiti di NSL e OL più semplici)
                 \item Definiamo l'equazioni degli stati codificati
                 \item Costruiamo l'output table codificata
                 \item Definiamo l'equazioni degli output codificati

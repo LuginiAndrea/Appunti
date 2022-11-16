@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  9 NOV 2022 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  16 NOV 2022 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -136,20 +136,20 @@ File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 ) (appunti.aux)
 \openout1 = `appunti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -210,11 +210,11 @@ G,.JBIG2,.JB2,.eps]
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
  (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 
 (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -225,131 +225,212 @@ LaTeX Warning: No \author given.
 [1
 
 {C:/Users/lugio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(appunti.toc)
+(appunti.toc [1
+
+])
 \tf@toc=\write3
 \openout3 = `appunti.toc'.
 
- [1
-
-]
-<retta.png, id=13, 510.90875pt x 381.425pt>
+ [2]
+<retta.png, id=16, 510.90875pt x 381.425pt>
 File: retta.png Graphic file (type png)
 <use retta.png>
-Package pdftex.def Info: retta.png  used on input line 15.
+Package pdftex.def Info: retta.png  used on input line 16.
 (pdftex.def)             Requested size: 345.0pt x 257.56134pt.
-<parabola.jpg, id=14, 1284.8pt x 722.7pt>
+<parabola.jpg, id=17, 1284.8pt x 722.7pt>
 File: parabola.jpg Graphic file (type jpg)
 <use parabola.jpg>
-Package pdftex.def Info: parabola.jpg  used on input line 31.
+Package pdftex.def Info: parabola.jpg  used on input line 32.
 (pdftex.def)             Requested size: 345.0pt x 194.06194pt.
- [2 <./retta.png>] [3 <./parabola.jpg>]
-Overfull \hbox (7.81335pt too wide) in paragraph at lines 41--41
+ [3 <./retta.png>] [4 <./parabola.jpg>]
+Overfull \hbox (7.81335pt too wide) in paragraph at lines 42--42
 []\OT1/cmr/bx/n/10 Dimostrazione della cor-ret-tezza della for-mula riso-lu-tiv
 a per le equazioni
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[4]
-Overfull \hbox (17.97174pt too wide) in paragraph at lines 72--75
+[5]
+Overfull \hbox (17.97174pt too wide) in paragraph at lines 73--76
 \OT1/cmr/m/n/10 Tramite un'applicazione, as-so-cio gli el-e-menti dell'insieme 
 A agli el-e-menti dell'insieme
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
 [6]
-Overfull \hbox (64.35493pt too wide) detected at line 165
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
+[7]
+Overfull \hbox (64.35493pt too wide) detected at line 166
 [] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it
 /10 b[] \OT1/cmr/m/n/10 + ^^F[] [] + ^^F[] [] + [] \OMS/cmsy/m/n/10 ^^C \OML/cm
 m/m/it/10 a[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 b[] \OT1/cmr/m/n/10 =
  []
 
-[7] [8]
-Overfull \hbox (1.50702pt too wide) in paragraph at lines 223--227
+[8] [9]
+Overfull \hbox (1.50702pt too wide) in paragraph at lines 224--228
 []\OT1/cmr/m/n/10 f \OT1/cmr/bx/n/10 ini-et-tiva\OT1/cmr/m/n/10 : se, per as-su
 rdo, non lo fosse vor-rebbe dire che $\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 x[]; x
 [][]x[] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--283
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-[11] [12] (appunti.aux) ) 
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Overfull \hbox (36.31416pt too wide) detected at line 326
+[] \OML/cmm/m/it/10 f [] [] \OMS/cmsy/m/n/10 2 [] \OT1/cmr/m/n/10 =[]\OMS/cmsy/
+m/n/10 ) \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 m; x[] \OT1/cm
+r/m/n/10 = \OML/cmm/m/it/10 M
+ []
+
+
+Overfull \hbox (53.91212pt too wide) detected at line 333
+\OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 ) 8\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2 []
+ 9[]\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 c[]perx \OMS/cmsy/m/
+n/10 ! \OML/cmm/m/it/10 a=b
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Overfull \hbox (90.09283pt too wide) detected at line 336
+\OML/cmm/m/it/10 S \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 sup[]; S[]f [] []
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+
+Overfull \hbox (42.46686pt too wide) detected at line 362
+\OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 ) 9\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 : [
+] \OML/cmm/m/it/10 ; f[][] \OMS/cmsy/m/n/10 ([]) \OML/cmm/m/it/10 f[]
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 415--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 442--444
+
+ []
+
+[17] [18]
+<limiti-notevoli1.jpg, id=82, 597.31155pt x 414.8298pt>
+File: limiti-notevoli1.jpg Graphic file (type jpg)
+<use limiti-notevoli1.jpg>
+Package pdftex.def Info: limiti-notevoli1.jpg  used on input line 496.
+(pdftex.def)             Requested size: 690.0pt x 479.247pt.
+<limiti-notevoli2.jpg, id=83, 597.31155pt x 216.0873pt>
+File: limiti-notevoli2.jpg Graphic file (type jpg)
+<use limiti-notevoli2.jpg>
+Package pdftex.def Info: limiti-notevoli2.jpg  used on input line 498.
+(pdftex.def)             Requested size: 690.0pt x 249.64258pt.
+
+Overfull \hbox (213.52228pt too wide) in paragraph at lines 495--499
+ |  [] 
+ []
+
+
+Overfull \hbox (213.52228pt too wide) in paragraph at lines 495--499
+ |  [] 
+ []
+
+[19 <./limiti-notevoli1.jpg>] [20 <./limiti-notevoli2.jpg>] (appunti.aux) ) 
 Here is how much of TeX's memory you used:
- 3215 strings out of 478338
- 51129 string characters out of 2836700
- 352560 words of memory out of 3000000
- 21601 multiletter control sequences out of 15000+600000
+ 3230 strings out of 478338
+ 51487 string characters out of 2836700
+ 352571 words of memory out of 3000000
+ 21614 multiletter control sequences out of 15000+600000
  479303 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,234b,209s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\lugio\AppData\Local\MiKTeX\fonts/pk/ljfour/
-jknappen/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/lugio/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lug
-io/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.
-pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lu
-gio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
-Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb>
-Output written on appunti.pdf (13 pages, 390386 bytes).
+ 60i,7n,67p,263b,254s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:
+\Users\lugio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.p
+k><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lugio/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/lugio/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/lugio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users
+/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/lugio/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lugio/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on appunti.pdf (21 pages, 712017 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
