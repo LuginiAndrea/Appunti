@@ -1,0 +1,142 @@
+\contentsline {section}{\numberline {0.1}Equazioni e disequazioni}{2}{}%
+\contentsline {subsection}{\numberline {0.1.1}La retta}{2}{}%
+\contentsline {subsection}{\numberline {0.1.2}Polinomi di secondo grado: le parabole}{3}{}%
+\contentsline {subsubsection}{Dimostrazione della correttezza della formula risolutiva per le equazioni di secondo grado}{3}{}%
+\contentsline {subsection}{\numberline {0.1.3}Modulo}{4}{}%
+\contentsline {section}{\numberline {0.2}Insiemi numerici}{4}{}%
+\contentsline {subsection}{\numberline {0.2.1}Applicazioni}{4}{}%
+\contentsline {subsection}{\numberline {0.2.2}Definizione di $\mathbf {N}$ tramite gli insiemi}{5}{}%
+\contentsline {section}{\numberline {0.3}Funzioni}{5}{}%
+\contentsline {subsection}{\numberline {0.3.1}Definizione}{5}{}%
+\contentsline {subsection}{\numberline {0.3.2}Immagine}{6}{}%
+\contentsline {subsection}{\numberline {0.3.3}Grafico di una funzione}{6}{}%
+\contentsline {subsubsection}{Definizione}{6}{}%
+\contentsline {subsubsection}{Rappresentazione sul piano}{6}{}%
+\contentsline {subsubsection}{Proprietà fondamentale della funzione espressa col grafico}{6}{}%
+\contentsline {subsection}{\numberline {0.3.4}Proprietà delle funzioni}{6}{}%
+\contentsline {subsection}{\numberline {0.3.5}Funzioni composte}{6}{}%
+\contentsline {subsection}{\numberline {0.3.6}Condizioni di esistenza della funzione inversa}{7}{}%
+\contentsline {subsection}{\numberline {0.3.7}Operazioni sui grafici}{7}{}%
+\contentsline {subsection}{\numberline {0.3.8}Funzioni continue}{7}{}%
+\contentsline {subsubsection}{Criterio di continuità}{7}{}%
+\contentsline {subsubsection}{Teorema di esistenza degli zeri}{7}{}%
+\contentsline {paragraph}{Dimostrazione}{7}{}%
+\contentsline {paragraph}{Corollario}{8}{}%
+\contentsline {subsubsection}{Teorema di Weiestrass}{8}{}%
+\contentsline {paragraph}{Dimostrazione}{9}{}%
+\contentsline {subsubsection}{Teorema del valore intermedio avanzato}{9}{}%
+\contentsline {subsubsection}{Algebra delle funzioni continue}{9}{}%
+\contentsline {subsubsection}{Teorema del cambio di variabile}{10}{}%
+\contentsline {subsubsection}{Continuità della funzione composta}{10}{}%
+\contentsline {subsubsection}{Teorema di esistenza della radice i-esima}{10}{}%
+\contentsline {paragraph}{Dimostrazione}{10}{}%
+\contentsline {subsection}{\numberline {0.3.9}Funzioni monotone}{10}{}%
+\contentsline {subsubsection}{Teorema di monotonia}{10}{}%
+\contentsline {paragraph}{Dimostrazione}{10}{}%
+\contentsline {paragraph}{Corollario}{11}{}%
+\contentsline {subsection}{\numberline {0.3.10}Teorema di invertibilità della funzione continua}{11}{}%
+\contentsline {subsubsection}{Dimostrazione}{11}{}%
+\contentsline {paragraph}{Dimostrazione prima parte}{11}{}%
+\contentsline {paragraph}{Dimostrazione seconda parte}{12}{}%
+\contentsline {section}{\numberline {0.4}Limiti di successioni}{12}{}%
+\contentsline {subsection}{\numberline {0.4.1}Disuguaglianza di bernoulli}{12}{}%
+\contentsline {subsection}{\numberline {0.4.2}Limiti convergenti}{12}{}%
+\contentsline {subsection}{\numberline {0.4.3}Limiti divergenti}{12}{}%
+\contentsline {subsubsection}{Convergenza per eccesso e per difetto}{12}{}%
+\contentsline {subsection}{\numberline {0.4.4}Monotonia e limiti}{12}{}%
+\contentsline {subsubsection}{Numero di nepero}{12}{}%
+\contentsline {paragraph}{Dimostrazione}{13}{}%
+\contentsline {subsection}{\numberline {0.4.5}Algebra dei limiti}{13}{}%
+\contentsline {subsection}{\numberline {0.4.6}Teorema di permanenza del segno}{14}{}%
+\contentsline {subsection}{\numberline {0.4.7}Teorema dei carabinieri}{14}{}%
+\contentsline {subsubsection}{Dimostrazione}{14}{}%
+\contentsline {subsubsection}{Corollario}{14}{}%
+\contentsline {subsection}{\numberline {0.4.8}Stime asintotiche}{14}{}%
+\contentsline {subsubsection}{Ordine delle stime asintotiche}{14}{}%
+\contentsline {subsubsection}{Successioni asintotiche}{14}{}%
+\contentsline {subsubsection}{Criterio del rapporto}{15}{}%
+\contentsline {section}{\numberline {0.5}Limiti di funzioni}{15}{}%
+\contentsline {subsection}{\numberline {0.5.1}Definizione tramite limiti di successioni}{15}{}%
+\contentsline {subsection}{\numberline {0.5.2}Limite da destra e da sinistra}{15}{}%
+\contentsline {subsection}{\numberline {0.5.3}Criterio d'esistenza del limite}{15}{}%
+\contentsline {subsection}{\numberline {0.5.4}Teorema di unicità del limite}{15}{}%
+\contentsline {subsection}{\numberline {0.5.5}Limite per eccesso o per difetto}{15}{}%
+\contentsline {subsection}{\numberline {0.5.6}Asintoti}{16}{}%
+\contentsline {subsubsection}{Asintoto orizzontale}{16}{}%
+\contentsline {subsubsection}{Asintoto verticale}{16}{}%
+\contentsline {subsubsection}{Asintoto obliquo}{16}{}%
+\contentsline {subsection}{\numberline {0.5.7}Continuità di una funzione tramite limite}{16}{}%
+\contentsline {subsection}{\numberline {0.5.8}Punti di discontinuità}{16}{}%
+\contentsline {subsubsection}{Punto di salto (o prima specie)}{16}{}%
+\contentsline {subsubsection}{Punto di discontinuità di seconda specie}{16}{}%
+\contentsline {subsubsection}{Discontinuità eliminabile (o di terza specie)}{16}{}%
+\contentsline {section}{\numberline {0.6}Limiti notevoli}{17}{}%
+\contentsline {section}{\numberline {0.7}Derivate}{19}{}%
+\contentsline {subsection}{\numberline {0.7.1}Rapporto incrementale}{19}{}%
+\contentsline {subsection}{\numberline {0.7.2}Derivata come limite del rapporto incrementale}{19}{}%
+\contentsline {subsection}{\numberline {0.7.3}Punti di non derivabilità}{19}{}%
+\contentsline {subsubsection}{Punto angoloso}{19}{}%
+\contentsline {subsubsection}{Cuspide}{19}{}%
+\contentsline {paragraph}{Punto di flesso a tangente verticale}{20}{}%
+\contentsline {subsection}{\numberline {0.7.4}Derivabilità e Continuità}{20}{}%
+\contentsline {subsection}{\numberline {0.7.5}Retta tangente in $x_0$}{20}{}%
+\contentsline {subsection}{\numberline {0.7.6}Algebra delle derivate}{21}{}%
+\contentsline {paragraph}{Dimostrazione regola di Leibnitz}{21}{}%
+\contentsline {subsubsection}{Regola di Leibnitz ad n fattori}{21}{}%
+\contentsline {subsubsection}{Regola di Leibnitz per la derivata n-esima}{21}{}%
+\contentsline {subsection}{\numberline {0.7.7}Derivata della funzione composta}{21}{}%
+\contentsline {subsubsection}{Dimostrazione}{22}{}%
+\contentsline {subsection}{\numberline {0.7.8}Derivata dell'inversa}{22}{}%
+\contentsline {subsubsection}{Dimostrazione}{22}{}%
+\contentsline {subsection}{\numberline {0.7.9}Punti stazionari}{22}{}%
+\contentsline {subsection}{\numberline {0.7.10}Teorema di Fermat}{22}{}%
+\contentsline {subsubsection}{Dimostrazione}{23}{}%
+\contentsline {subsection}{\numberline {0.7.11}Teorema del valore medio di Lagrange}{23}{}%
+\contentsline {subsubsection}{Dimostrazione}{23}{}%
+\contentsline {subsection}{\numberline {0.7.12}Criterio di monotonia}{24}{}%
+\contentsline {subsubsection}{Dimostrazione}{24}{}%
+\contentsline {subsection}{\numberline {0.7.13}Ricerca dei punti stazionari}{24}{}%
+\contentsline {subsection}{\numberline {0.7.14}Teorema di de l'Hopital}{25}{}%
+\contentsline {subsection}{\numberline {0.7.15}Limite e derivata}{25}{}%
+\contentsline {subsection}{\numberline {0.7.16}Derivata seconda}{25}{}%
+\contentsline {subsubsection}{Significato geometrico}{25}{}%
+\contentsline {subsubsection}{Convessità di una figura}{25}{}%
+\contentsline {subsubsection}{Convessità di una funzione}{25}{}%
+\contentsline {paragraph}{Definizione geometrica con l'epigrafico}{25}{}%
+\contentsline {paragraph}{Definizione analitica}{26}{}%
+\contentsline {subsubsection}{Continuità, derivabilità e convessità}{26}{}%
+\contentsline {subsubsection}{Convessità e tangente}{26}{}%
+\contentsline {subsubsection}{Punti di flesso}{26}{}%
+\contentsline {paragraph}{Definizione}{26}{}%
+\contentsline {paragraph}{Punti di flesso e derivata seconda}{26}{}%
+\contentsline {section}{\numberline {0.8}Derivate fondamentali}{27}{}%
+\contentsline {section}{\numberline {0.9}Studio di funzione}{28}{}%
+\contentsline {section}{\numberline {0.10}Calcolo differenziale e approssimazioni}{28}{}%
+\contentsline {subsection}{\numberline {0.10.1}Linearizzazione e differenziale}{28}{}%
+\contentsline {subsection}{\numberline {0.10.2}Infinitesimo}{28}{}%
+\contentsline {subsubsection}{Relazione con l'asintoto}{29}{}%
+\contentsline {subsubsection}{Algebra degli $o$-piccolo}{29}{}%
+\contentsline {subsection}{\numberline {0.10.3}Approssimazione polinomiale}{29}{}%
+\contentsline {subsection}{\numberline {0.10.4}Polinomio di Taylor}{29}{}%
+\contentsline {subsection}{\numberline {0.10.5}Calcolare il valore della derivata dal polinomio di Taylor}{30}{}%
+\contentsline {subsubsection}{Resto secondo Peano}{30}{}%
+\contentsline {subsubsection}{Resto secondo Lagrange}{30}{}%
+\contentsline {subsection}{\numberline {0.10.6}Metodo di Newton}{31}{}%
+\contentsline {subsubsection}{Dimostrazione}{31}{}%
+\contentsline {section}{\numberline {0.11}Sviluppi noti di Taylor-MacLaurin}{32}{}%
+\contentsline {section}{\numberline {0.12}Funzioni iperboliche}{33}{}%
+\contentsline {subsection}{\numberline {0.12.1}Iperbole}{33}{}%
+\contentsline {subsection}{\numberline {0.12.2}Seno iperbolico}{33}{}%
+\contentsline {subsection}{\numberline {0.12.3}Coseno iperbolico}{33}{}%
+\contentsline {subsection}{\numberline {0.12.4}Tangente iperbolica}{34}{}%
+\contentsline {section}{\numberline {0.13}Numeri complessi}{35}{}%
+\contentsline {subsection}{\numberline {0.13.1}Numeri complessi come elementi di $\mathbf {R^2}$}{35}{}%
+\contentsline {subsubsection}{Somma}{35}{}%
+\contentsline {subsubsection}{Prodotto}{35}{}%
+\contentsline {subsubsection}{Quadrato di $\left (0, 1\right )$}{35}{}%
+\contentsline {subsection}{\numberline {0.13.2}Notazione con la $i$}{35}{}%
+\contentsline {subsubsection}{Parte Immaginaria e parte Reale}{35}{}%
+\contentsline {subsection}{\numberline {0.13.3}Rappresentazione polare}{36}{}%
+\contentsline {subsection}{\numberline {0.13.4}Identità di Eulero}{36}{}%
+\contentsline {subsection}{\numberline {0.13.5}Teorema fondamentale dell'Algebra}{36}{}%
+\contentsline {subsection}{\numberline {0.13.6}Risolvere le equazioni di grado n in $\mathbf {C}$}{36}{}%

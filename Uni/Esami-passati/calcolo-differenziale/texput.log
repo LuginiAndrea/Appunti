@@ -1,18 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  15 DEC 2022 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  20 NOV 2022 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**
+\cdot\cdot
 
 ! Emergency stop.
-<*> 
+<\cdot> 
     
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 2 strings out of 478338
- 17 string characters out of 2836700
+ 3 strings out of 478338
+ 20 string characters out of 2836700
  297722 words of memory out of 3000000
  18538 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000

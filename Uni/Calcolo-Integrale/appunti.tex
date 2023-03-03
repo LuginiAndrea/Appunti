@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{identity}{Identity}[theorem]
+% \newcommand{\implies}{\Rightarrow}
+\newcommand{\qed}{\rule{0.7em}{0.7em}}
+\begin{document}
+\title{Calcolo Integrale}
+\maketitle
+\section{Serie}
+    \subsection{Definizione}
+        Una serie $\{S_n\}$ della serie $\{a_n\}$ è la \textbf{successione delle somme parziali} 
+        di $a_n$, ovvero 
+        $$\forall n \in \mathbb{N}, S_n = \sum_{k=0}^n a_k$$
+    \subsection{Carattere di una serie}
+        Una serie, per $n \to \infty$, può fare 3 cose, esattamente come una successione può:
+        \begin{itemize}
+            \item \textbf{Divergere}: $\sum_{k=0}^\infty a_k = \pm \infty$
+            \item \textbf{Convergere}: $\sum_{k=0}^\infty a_k \in \mathbb{R}$
+            \item \textbf{Non convergere}: $\nexists \sum_{k=0}^\infty a_k$
+        \end{itemize}
+    \subsection{Condizione necessaria per la convergenza di una serie}
+        \begin{theorem}[Condizione necessaria per la convergenza della serie]
+            $$\sum_{k=0}^\infty a_k \in \mathbb{R} \implies a_k \to 0$$
+        \end{theorem}
+        La dimostrazione è alquanto semplice: \\
+        Se $S_n$ converge per $n \to \infty$, allora 
+        $$\lim_{n \to \infty} S_n = S_{n+1} = S \in \mathbb{R} \implies 
+            \lim_{n \to \infty} \sum_{k=0}^{n+1} - \lim_{n \to \infty} \sum_{k=0}^{n} = 
+            \lim_{n \to \infty} a_{n+1} = 0
+        $$
+        \subsubsection{Nota bene}
+            Il criterio non implica che se $a_n \to 0$ allora $S_n$ converge. Un esempio è la serie 
+            $$\sum_{k=1}^\infty k^{-1} = \infty$$
+    \subsection{Serie a termini costanti}
+        \begin{theorem}[Carattere di serie a termini costanti]
+            $$a_n \geq/\leq 0 \textrm{ definitivamente } \implies \lim_{n \to \infty} S_n \in \mathbb{R} \, \lor = \pm \infty$$
+        \end{theorem}
+        Questa proprietà è una semplice conseguenza delle successioni monotone
+        \begin{corollary}
+            $$\{a_k\} \textrm{ definitivamente di segno costante } \land a_k \not\to 0 \implies \{S_n\} \textrm{ diverge }$$
+        \end{corollary}
+        \begin{corollary}
+            $$\{S_n\} \textrm{ limitata dall'alto/basso } \land \{a_k\} \textrm{ definitivamente } \geq/\leq 0 \implies \{S_n\} \textrm{ converge}$$
+        \end{corollary}
+    \subsection{Serie geometriche}
+        $$\{S_n\} \textrm{ è una serie geometrica } \iff \forall k \in \mathbb{N} a_k = q^k \land q \in \mathbb{R}$$
+        \begin{theorem}[Carattere della serie geomtrica]
+            Una serie geometrica ha carattere diverso in base al valore di $q$, detto ragione della serie:
+            \begin{itemize}
+                \item $q = 0$: $\forall n \in \mathbb{N}, S_n = 0$. Converge a 0 per $n \to \infty$
+                \item $q = 1$: $S_n = n + 1$. Diverge a $\infty$ per $n \to \infty$
+                \item $q = -1$: Se $2 | n$, $S_n = 1$, in alternativa $S_n = 0$. Non converge per $n \to \infty$
+                \item Per i restanti $q$, $S_n = \frac{1-q^{n+1}}{1-q}$. 
+            \end{itemize}
+        \end{theorem}
+        \subsubsection{Dimostrazione della formula per il calcolo dell'$n$-esimo valore della serie geomtrica}
+            $$S_n = \sum_{k=0}^n q^k \implies q \cdot S_n = \sum_{k=0}^n q^{k+1} \implies 
+                S_n - qS_n = 1 - q^{k+1} = S_n\left(1 - q\right) \implies$$
+            $$S_n = \frac{1 - q^{n+1}}{1 - q}$$
+    \subsection{Serie armoniche}
+        $$\{S_n\} \textrm{ è una serie armonica } \iff \forall k \in \mathbb{N}, \, a_k = k^\alpha, \alpha \in \mathbb{R}$$
+        \begin{theorem}[Convergenza della serie armonica generalizzata]
+                $$\{S_n\} \textrm{ converge } \iff \alpha > 1$$
+        \end{theorem}
+        La dimostrazione usa il criterio dell'integrale (vedremo la dimostrazione quando parlaremo del criterio)
+    \subsection{Criteri per studiare il carattere di una serie}
+        \begin{theorem}[Criterio del confronto]
+            $$\forall \{A_n\}, \{B_n\} \textrm{ di termini a segno definitivamente costante }, a_n \leq b_n \textrm{ definitivamente } \implies$$
+            $$\left(A_n \to \infty \implies B_n \to \infty\right) \land 
+                \left(B_n \to l_B \in \mathbb{R} \implies A_n \to l_A \in \mathbb{R}\right)$$
+        \end{theorem}
+        La dimostrazione è alquanto ovvia e la lascio per esercizio al lettore
+        \begin{theorem}[Criterio del confronto asintotico]
+            $$\forall \{A_n\}, \{B_n\} \textrm{ di termini a segno definitivamente costante}, \lim_{n \to \infty }\frac{a_n}{b_n} = L$$
+            \begin{equation}
+                \left\{\begin{array}{l l l l}
+                    A_n \to +\infty & \iff & B_n \to \infty & L \in \mathbb{R}^+ \\
+                    B_n \to \infty & \implies & A_n \to \infty & L = \infty \\
+                    B_n \to l_B \in \mathbb{R} & \implies & A_n \to l_A \in \mathbb{R} & L = 0 \\
+                \end{array}\right.
+            \end{equation}
+        \end{theorem}
+        Anche qui la dimostrazione è simile a quella del confronto e la lascio al lettore
+        \begin{theorem}[Criterio del rapporto]
+            $$\{A_n\} \textrm{ di termini a segno definitivamente costante }, \lim_{n \to \infty}\frac{a_{n+1}}{a_n} = L$$
+            \begin{equation}
+                \left\{\begin{array}{l l}
+                    A_n \to +\infty & L > 1 \\
+                    A_n \to l_A \in \mathbb{R} & L < 1 \\
+                    \textrm{Inconcludente} & L = 1 \\
+                \end{array}\right.
+            \end{equation}
+        \end{theorem}
+        Dimostrazione: se il limite per $n \to \infty$ del rapporto tende a $L < 1$, 
+        per la completezza di $\mathbb{R}$ esistono $N \in \mathbb{N}, r \in \left[\left.L, 1\right)\right.$
+        tale che $a_{n+1} < ra_n \, \forall n > N$, che iterativamente implica che 
+        $$\forall i \in \mathbb{N}, a_{n+i} < r^ia_n \implies \sum_{i=1}^\infty a_{N+i} < \sum_{i=1}^\infty r^ia_n$$
+        Essendo la seconda una serie geometrica con $0 < r < 1$, questa converge, e per il criterio del confronto 
+        $\{A_n\}$ converge
+        \begin{theorem}[Criterio della radice]
+            $$\{A_n\} \textrm{ di termini a segno definitivamente costante }, \lim_{n \to \infty}\sqrt[n]{a_n} = L$$
+            \begin{equation}
+                \left\{\begin{array}{l l}
+                    A_n \to +\infty & L > 1 \\
+                    A_n \to l_A \in \mathbb{R} & L < 1 \\
+                    \textrm{Inconcludente} & L = 1 \\
+                \end{array}\right.
+            \end{equation}
+        \end{theorem}
+        La dimostrazione è simile a quella di prima: se $L < 1$ allora 
+        esistono $N \in \mathbb{N}, r \in \left[\left.L, 1\right)\right.$ tale che 
+        $\forall n > N, L^n = a_n < r^n < 1$, quindi 
+        $$\sum_{n = N}^\infty a_n < \sum_{n=N}^\infty r^n$$ Essendo la 
+        seconda una serie geomtrica convergente, per il teorema del confronto $\{A_n\}$ converge
+    \begin{theorem}[Criterio di Leibniz]
+        $$\{A_n\} \textrm{ con } A_n = \sum_{k=0}^n \left(-1\right)^ka_k, \{a_n\} \textrm{ definitivamente monotona decrescente e di segno costante }$$
+        $$\implies \{A_n\} \to l_A \in \mathbb{R}$$
+    \end{theorem}
+    \begin{theorem}[Criterio della convergenza assoluta]
+        $$\sum_{i=0}^\infty |a_n| \textrm{ converge } \implies \sum_{i=0}^\infty a_n \textrm{ converge }$$
+    \end{theorem}
+            
+
+\end{document}

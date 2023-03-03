@@ -1,0 +1,11 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{2}\relax 
+\doTocEntry\tocsection{0.1}{\csname a:TocLink\endcsname{1}{x1-20000.1}{QQ2-1-2}{Equazioni e disequazioni}}{3}\relax 
+\doTocEntry\tocsubsection{0.1.1}{\csname a:TocLink\endcsname{1}{x1-30000.1.1}{QQ2-1-3}{La retta}}{3}\relax 
+\doTocEntry\tocsubsection{0.1.2}{\csname a:TocLink\endcsname{1}{x1-40000.1.2}{QQ2-1-4}{Polinomi di secondo grado: le parabole}}{4}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-50000.1.2}{QQ2-1-5}{Dimostrazione della correttezza della formula risolutiva per le equazioni di secondo grado}}{5}\relax 
+\doTocEntry\tocsubsection{0.1.3}{\csname a:TocLink\endcsname{1}{x1-60000.1.3}{QQ2-1-6}{Modulo}}{8}\relax 
+\doTocEntry\tocsection{0.2}{\csname a:TocLink\endcsname{1}{x1-70000.2}{QQ2-1-7}{Insiemi numerici}}{9}\relax 
+\doTocEntry\tocsubsection{0.2.1}{\csname a:TocLink\endcsname{1}{x1-80000.2.1}{QQ2-1-8}{Applicazioni}}{10}\relax 
+\doTocEntry\tocsubsection{0.2.2}{\csname a:TocLink\endcsname{1}{x1-90000.2.2}{QQ2-1-9}{Definizione di $\mathbf@@ {N}$ tramite gli insiemi}}{10}\relax 
+\doTocEntry\tocsection{0.3}{\csname a:TocLink\endcsname{1}{x1-100000.3}{QQ2-1-10}{Coefficiente binomiale}}{12}\relax 

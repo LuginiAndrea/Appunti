@@ -1,0 +1,287 @@
+\documentclass{report}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\newtheorem{notation}{Notation}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{axiom}{Axiom}[section]
+\newcommand{\implies}{\Rightarrow}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+\makeindex
+
+\title{Mathematical concepts for Computer Science}
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{Propositional Logic}
+    \section{Introduction}
+        \subsection{Propositions and predicates}
+            \begin{definition}
+                A proposition $p$ is a statement that is either True or False
+            \end{definition}
+            \begin{notation}
+                We'll indicate False as $0$ and True as $1$
+            \end{notation}
+            \begin{definition}
+                A predicate, or formula, is a proposition whose truth
+                depends on the value of its variables. 
+            \end{definition}
+            \begin{notation}
+                We'll usually use capital letters such as $P$ to denote predicates. \\
+                $P\left(n\right) \in \{0, 1\}$
+            \end{notation}
+        \subsection{Axioms}
+            \begin{definition}
+                An axiom is a proposition that we consider true by default
+            \end{definition}
+            Axioms are at the base of mathematics. A well-known set of axioms are the one established by Euclid, or the one 
+            currently used for mathematics, the ZFC axioms. \\
+            We use axioms to establish if a proposition is true or false. \\
+            \begin{definition}[Completeness]
+                A set of axioms is said to be \textbf{complete} if $\forall P$ we can establish
+                whether $P\left(n\right) = 0$ or $P\left(n\right) = 1$
+            \end{definition}
+            \begin{definition}[Consistency]
+                A set of axioms is said to be \textbf{consistent} if $\forall P$, $P\left(n\right)$ 
+                isn't both true and false (free from contradictions)
+            \end{definition}
+            \subsubsection{Gödel incompleteness theorems}
+                With its two incompleteness theorems, in $1930$ Gödel proved 
+                that $\forall$ complete set of axioms $S$, $\exists P\left(n\right)$ such that 
+                $P\left(n\right) = 0 \land P\left(n\right) = 1$, basically proving 
+                that $S$ \textbf{can't be both complete and consistent}
+        \subsection{Theorems, Corollaries, Lemmas and Conjectures}
+            \begin{definition}
+                A theorem is an important proposition which is proved to be true
+            \end{definition}
+            \begin{definition}
+                A corollary is a true proposition derived with simple steps from the theorem
+            \end{definition}
+            \begin{definition}
+                A lemma is a preliminary proposition used for proving later propositions, 
+                such as other lemmas and the theorem 
+            \end{definition}
+            \begin{definition}
+                A conjecture is a proposition which is tought to be true but 
+                for which there isn't a proof
+            \end{definition}
+        \subsection{Boolean variables and assignments}
+            Every proposition can be transformed into a set of variables that 
+            can be either true or false, $0$ or $1$. \\
+            The algebra that studies the mathematical expressions with these so-called 
+            boolean variables is called boolean Algebra. \\
+            Given a proposition $P$, an assignment $\alpha$ of P is one of 
+            the unique possible combination of values of its variables within
+            the set of all possible assignments $A$. The notation of an assignment 
+            is $\alpha\left(P\right)$, whose result is $\in \{0, 1\}$
+    \section{Notation}
+        In order to make formal logic, well, formal, we need to introduce some symbols. \\
+        We'll begin by discussing about truth tables, a way to show graphically for 
+        the results of $\alpha\left(P\right) \, \forall \alpha \in A$.
+        \subsection{NOT}
+            Symbol: $\neg$. Translates the clauses \textit{not A}. 
+            Truth table:
+            $$\begin{array}{c | c}
+                A & \neg A \\
+                \hline
+                0 & 1 \\
+                1 & 0
+            \end{array}$$
+        \subsection{OR}
+            Symbol: $\lor$. Translates the clauses \textit{this or that} in a non-exclusive 
+            way. \\
+            Truth table:
+            $$\begin{array}{c | c | c}
+                A & B & A \lor B \\
+                \hline
+                0 & 0 & 0 \\
+                0 & 1 & 1 \\
+                1 & 0 & 1 \\
+                1 & 1 & 1 \\
+            \end{array}$$
+        \subsection{AND}
+            Symbol: $\land$. Translates the clauses \textit{this and that}.
+            $$\begin{array}{c | c | c}
+                A & B & A \land B \\
+                \hline
+                0 & 0 & 0 \\
+                0 & 1 & 0 \\
+                1 & 0 & 0 \\
+                1 & 1 & 1 \\
+            \end{array}$$
+        \subsection{IMPLIES}
+            Symbol: $\implies$. Translates the clauses \textit{if this, than that}. \\
+            Expresses a \textbf{sufficient} condition for $B$. \\
+            Truth table:
+            $$\begin{array}{c | c | c}
+                A & B & A \implies B \\
+                \hline
+                0 & 0 & 1 \\
+                0 & 1 & 1 \\
+                1 & 0 & 0 \\
+                1 & 1 & 1 \\
+            \end{array}$$
+            $$A \implies B = \neg B \implies \neg A = \neg A \lor B$$ 
+        \subsection{IF AND ONLY IF}
+            Symbol: $\iff$. Translates the clauses \textit{if and only if this than that}.
+            Express a \textbf{sufficient and necessary} condition for $B$s
+            Truth table:
+            $$\begin{array}{c | c | c}
+                A & B & A \iff B \\
+                \hline
+                0 & 0 & 1 \\
+                0 & 1 & 0 \\
+                1 & 0 & 0 \\
+                1 & 1 & 1 \\
+            \end{array}$$
+            $$A \iff B = \left(A \implies B \land B \implies A\right)$$
+        \subsection{SAT, UNSAT e TAUT}
+            There exists three big sets for propositions in logic. \\
+            SAT, the set of satisfiable propositions, UNSAT, the set of unsatisfiable proposition, 
+            and TAUT, the set of all tautologies (also called \textit{valid propositions}). \\
+            A proposition $P$ is
+            \begin{itemize}
+                \item $\in \textrm{ SAT } \iff \exists \alpha \in A \mid \alpha\left(P\right) = 1$
+                \item $\in \textrm{ TAUT } \iff \forall \alpha \in A \mid \alpha\left(P\right) = 1$. TAUT $\subset $ SAT.
+                \item $\in \textrm{ UNSAT } \iff \not\exists \alpha \in A \mid \alpha\left(P\right) = 1 \iff \neg P \in$ TAUT
+            \end{itemize}
+        \subsection{Boolean Algebra and Logic}
+            Due to the fact that in boolean algebra variables may only have 2 states, 
+            and given how boolean's operations are defined, this algebra model is equivalent
+            to formal logic. \\
+            We are basically stating that boolean algebra is equivalent to logic algebra 
+        \subsection{CNF and DNF}
+            Knowing this, and knowing that every boolean formula can be transformed 
+            into an Sum-of-products or Product-of-sums form, we know that every 
+            proposition $P$ can be transformed into a CNF or DNF. \\
+            \begin{definition}[Clause]
+                A clause is a formula formed from a finite set of variables $V$. \\
+                In CNF, $C = \bigvee_{i=0}^n L_i$, and $C = \emptyset = \square = 0$. \\
+                In DNF, $C = \bigwedge_{i=0}^n L_i$, and $C = \emptyset = \square = 1$
+            \end{definition}
+            \begin{definition}[CNF]
+                A CNF (Conjuctive normal form) is a way to express a proposition
+                $P$ as an AND of ORs. 
+                $$P = \bigwedge_{i=1}^n\bigvee_{j=1}^{\#C_i}L_{i,j}$$
+            \end{definition}
+            \begin{definition}[DNF]
+                A DNF (Disjunctive normal form) is a way to express a proposition $P$ 
+                as an OR of ANDs.
+                $$P =  \bigvee_{i=1}^n\bigwedge_{j=1}^{\#C_i}L_{i,j}$$
+            \end{definition}
+            \subsubsection{Set notation for normal forms}
+                After stating whether we are working in DNF or CNF, we can write a normal form 
+                of $n$ clauses as
+                $$\{C_i \, \forall i \in \left[1, n\right]\} = 
+                    \{\{L_{ij}\} \, \forall i \in \left[1, n\right] \, \forall j \in \left[1, \#C_i\right]\}$$
+    \section{Determine if $P \in$ SAT}
+        \subsection{The $P = NP$ problem}
+            This problem is equivalent to $P = NP$, the holy grail of computer science. \\
+            That is because to check if a proposition is satisfiable, we may have to check 
+            all combinations of variables, so, for a proposition $F$ with $n$ variables, we 
+            may have to check $2^n$ combinations. \\
+            Currently there exists some method of proving whether a normal form is SAT in 
+            polynomial time, but in order to do it we must first convert $F$ into a NF, 
+            which may cause the formula to grow exponentially.
+        \subsection{The resolution method}
+            Here we are gonna state the resolution method to resolve any CNF. \\
+            The algorithm works as follow:
+            \begin{enumerate}
+                \item Check if there $\exists C_1, C_2 \in F \mid C_1 \neq C_2 \land p \in C_1 \land \neg p \in C_2$
+                \item If there exists such couple, remove $p$ from both clauses. If there isn't such couple, $F \in$ SAT 
+                \item If $C_1 = \square \lor C_2 = \square$ then $F \in$ UNSAT, else repeat
+            \end{enumerate}
+            This method is complete and sound
+            \begin{definition}[Completeness of RIS] 
+                If $F \in$ UNSAT then the resolution method will yield UNSAT as the result
+            \end{definition}
+            \begin{definition}[Soundness of RIS]
+                If the resolution method yields UNSAT as the result then $F \in$ UNSAT
+            \end{definition}
+\chapter{Proofs}
+    \section{Inference rules}
+        Inference rules are the way we prove new propositions based on propositions previously proved. \\
+        \begin{itemize}
+            \item Modus ponens: $P == 1 \land \left(P \implies Q\right) \implies Q$
+            \item Transitivity: $P \implies Q \land Q \implies R \implies P \implies R$
+            \item Contrapositive: $\neg Q \implies \neg P \implies P \implies Q$
+        \end{itemize}
+    \section{How to: prove an implication}
+        There are multiple ways of showing an implication is true. \\
+        They are all correct, but some work better than others in certain cases.
+        \begin{itemize}
+            \item Direct proof: assuming $P == 1$, show that it implies $Q == 1$
+            \item Proof by contraposition: use the direct proof on the contrapositive $\neg Q \implies \neg P$
+        \end{itemize}
+    \section{How to: prove an iff}
+        \begin{itemize}
+            \item Direct 2-way proof: prove $P \implies Q$ and prove $Q \implies P$
+            \item Chain proof: Construct a chain of iff clauses such that $P \iff ... \iff Q$
+        \end{itemize}
+    \section{Proof by cases}
+        A proof by cases is an \textit{exhaustive} proof. It demonstrates that 
+        for all the possible cases that there may be and prove all sub-cases. 
+    \section{Proof by contradiction}
+        In a proof by contradiction we show that if some proposition $P$ in our 
+        proof was to be false, then some other proposition $T$ known to be true 
+        would have to be false 
+    \section{How to: write a good proof}
+        \begin{itemize}
+            \item State the thesis and how you're going to demonstrate it 
+            \item Keep a linear flow: it's a proof, not a movie
+            \item It's not a math test: don't put too many calculations in the proof 
+            \item Avoid using too many symbols: where and when you can, use words
+            \item But don't use no symbols at all: don't be afraid to introduce 
+                new symbols as notations, variables, ecc..., if it will make the proof 
+                easier to read
+            \item Use lemmas and corollaries: write the proof as a one-step-at-a-time
+                process, making use of lemmas and corollaries when usefull and making 
+                each part of the proof clear
+            \item Keep an eye towards the obvious: remember that everything that seems 
+                obvious for you isn't necessarily obvious for the reader, so explain and demonstrate
+                more advanced stuff 
+        \end{itemize}
+    \section{Well-ordering principle and Induction}
+        \subsection{Well-ordering principle}
+            The well-ordering principle is an axiom of the ZFC axiom set. \\
+            \begin{axiom}[Well-ordering principle] 
+                $$\forall S \subseteq \mathbf{N}, S \neq \emptyset \implies \exists n \in S 
+                    \mid n \leq m \, \forall m \in S$$
+            \end{axiom}
+            \subsubsection{Proofs with the WOP}
+                This principle is usefull to construct proofs, usually by contradiction. \\
+                The usual scheme is:
+                \begin{itemize}
+                    \item Define the set $C = \{n \in \mathbf{N} \mid \neg P\left(n\right)\}$
+                    \item Assume $C \neq \emptyset$ 
+                    \item Reach a contradiction
+                    \item Conclude $C$ must be empty by contradiction
+                \end{itemize}
+        \subsection{Induction}
+            Induction is another proof method equivalent to contradiction, states the following:
+            \begin{axiom}[Induction principle]
+                $$\left(P\left(c \in \mathbf{N}\right) \land P\left(n\right) \implies P\left(n+1\right)
+                    \, \forall n \geq c\right) \implies P\left(n\right) \, \forall n \geq c$$
+            \end{axiom}
+            \subsubsection{Proofs using Induction}
+                The usual schema is:
+                \begin{itemize}
+                    \item Prove that $\exists c \in \mathbf{N} \mid P\left(c\right) == 1$
+                    \item Prove that $P\left(n\right) \implies P\left(n+1\right) \, \forall n \geq c$
+                \end{itemize}
+            \subsubsection{Strong Induction}
+                Strong induction is equivalent to the proof by induction with the addition 
+                that, other from $P\left(n\right) == 1$, we also assume $P\left(m\right) == 1 \, \forall c \leq m \leq n$
+                in order to prove $P\left(n+1\right)$
+            
+        
+
+
+
+\end{document}
