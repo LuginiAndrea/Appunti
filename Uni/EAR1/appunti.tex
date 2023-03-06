@@ -7,6 +7,7 @@
 \newtheorem{lemma}{Lemma}[theorem]
 \newtheorem{identity}{Identity}[theorem]
 \newtheorem{definition}{Definition}[section]
+\newtheorem{examples}{Examples}[section]
 \newcommand{\qed}{\rule{0.7em}{0.7em}}
 \begin{document}
 \title{Elementi di analisi reale}
@@ -24,6 +25,16 @@
     Possiamo notare come la completezza di $\mathbb{R}$ non debba essere collegata al 
     fatto che $\mathbb{R}$ sia ordinato. Pensiamo infatti a $\mathbb{C}$, insieme non 
     ordinato ma che, essendo isomorfo a $\mathbb{R}^2$, dovrà essere necessariamente completo.
+    \begin{definition}[Estremo superiore/inferiore] \, \\
+        $S \in \mathbb{R}$ è detto \textbf{estremo superiore} di $E \subset \mathbb{R}$ se  
+        $\forall \varepsilon > 0 \exists x \in E \textrm{ t.c. } S \geq x > S - \varepsilon$ \\
+        Analoga la definizione di estremo inferiore. 
+    \end{definition}
+    \begin{definition}[Massimo/minimo di un insieme] \, \\
+         $S \in \mathbb{R}$ è detto \textbf{massimo} di $E \subset \mathbb{R}$ se 
+        $S = \sup\left(E\right)$ e $S \in E$. \\
+        Analoga la definizione di minimo.
+    \end{definition}
     \subsection{Successioni in $\mathbb{R}$}
         \begin{definition}[Successione]
             \, \\ Una successione in $\mathbb{R}$ è una funzione 
@@ -123,12 +134,12 @@
             $$|a_{n+j} - a_n| < b_n - a_n \land |b_{n+j} - b_n| < b_n - a_n \; \forall j \in \mathbb{N}$$
             In quanto per la proprietà archimedea $\frac{b_0 - a_0}{2^n} \to 0$, allora anche $b_n - a_n \to 0$, il che 
             verifica che le nostre due successioni sono di Cauchy. \\
-            Inoltre per $n \to \infty$, $a_n = b_n$, ed essendo di Cauchy ne deriva che convergono entrambe a limite $l$, che 
-            per costruzione è maggiorante di $E$. \\
-            Ipotizziamo ora che esista $p$ maggiorante di 
-            $E$ tale che $p < l$. Ne seguirebbe che, $\forall n \in \mathbb{N}, p > l$ per costruzione, e quindi 
-            abbiamo $\forall n, a_n < p < l$. Passando al limite, otteniamo che $l < p < l$ il che è impossibile, 
-            e quindi $l$ è il minor minorante di $E$, dimostrando l'AoC $\; \qed$
+            Inoltre per $n \to \infty$, $a_n = b_n$, ed essendo di Cauchy ne deriva che convergono entrambe a limite $\mu$, che 
+            per costruzione è maggiorante di $E$.
+            Inoltre, essendo $\mu$ limite di $\{a_n\}$, sappiamo che $\{a_n\} > \mu - \varepsilon$ definitivamente:
+            ne segue che 
+            $$\forall \varepsilon > 0, \exists x \in E \textrm{ t.c. } x > \{a_n\} - \varepsilon > \mu - 2\varepsilon
+                \textrm{ definitivamente }\implies \forall \varepsilon > 0, \exists x \in E \textrm{ t.c. } x > \mu - \varepsilon \; \qed$$
         \subsection{Considerazioni importanti}
             I più attenti avranno notato che ad inizio capitolo abbiamo parlato di come vogliamo 
             rendere separati i concetti di completezza e di ordinamento di un insieme, ma che 
@@ -136,6 +147,65 @@
             Cauchy, ed è quindi usato nella nostra dimostrazione dell'AoC. \\
             Si propone di sostituire il concetto di ordinamento col concetto di \textbf{distanza}, che 
             verrà introdotto nel prossimo capitolo 
+        \subsection{Bonus: definizione di campo}
+            Un campo è una tripla $\left(X, +, \cdot\right)$ dove $X$ è un insieme, 
+            dove $+$ e $\cdot$  sono operazioni binarie che rispettano gli assiomi di somma e moltiplicazione:
+            \begin{itemize}
+                \item L'operazione è associativa
+                \item L'operazione è commutativa
+                \item $\cdot$ è distributiva
+                \item $X$ contiene l'elemento neutro, 0 per $+$, 1 per $\cdot$
+                \item $X$ contiene l'inverso per entrambe le operazioni (per $\cdot$ si considera $X - \{0\}$)
+                \item Il risultato dell'operazione è in $X$
+            \end{itemize}
 \newpage
 \section{Spazi metrici}
+    \begin{definition}[Spazio metrico] \, \\
+        Uno \textbf{spazio metrico} è una coppia $\left(X, d\right)$, dove $X$ è un insieme $\neq \emptyset$
+        (gli elementi di $X$ sono detti \textbf{punti}), e $d$ è una funzione $d: X \times X \rightarrow \mathbb{R}^+$ 
+        tale che valgono le seguenti proprietà:
+        \begin{itemize}
+            \item \textbf{positività}: $\forall x, y \in X, d\left(x,y\right) = 0 \iff x = y$
+            \item \textbf{simmetria}: $\forall x, y \in X, d\left(x, y\right) = d\left(y, x\right)$
+            \item \textbf{disugaglianza triangolare}: $\forall x,y,z \in X, d\left(x, y\right) \leq d\left(x, z\right) + d\left(z, y\right)$
+        \end{itemize}
+    \end{definition}
+    \textbf{N.B.}: sullo stesso insieme $X$ possiamo definire più spazi metrici!. \\
+    \begin{definition}[Spazio metrico indotto] \, \\
+        Dato lo spazio metrico $\left(X, d\right)$, è uno spazio metrico indotto la coppia $\left(E, d_{E \times E}\right)$
+        $$\forall E \subset X, \, d_{E \times E}: E \times E \to \mathbb{R} \textrm{ e con lo stesso comportamento di d}$$
+    \end{definition}
+    \begin{definition}[Norma]\, \\
+        Dato uno spazio vettoriale ${X}$, una norma $|| \cdot ||$ su $X$ è una funzione $|| \cdot ||: X \to \mathbb{R}^+$ tale che 
+        \begin{itemize}
+            \item $||x|| = 0 \iff x = 0$
+            \item $\forall \lambda \in \mathbb{R}, ||x\lambda|| = \lambda||x||$
+            \item $||x+y|| \leq ||x|| + ||y||$
+        \end{itemize}
+    \end{definition}
+    \begin{definition}[Distanza indotta dalla norma]\, \\
+        Dato uno spazio vettoriale $X$ normato, è detta distanza indotta dalla norma 
+        $d\left(x,y\right) = ||x-y||$ \\
+        Questo procedimento è applicabile ad ogni spazio vettoriale normato
+    \end{definition}
+    \subsection{Tipologie classiche di distanze}
+        Esistono delle distanze particolarmente interessanti, come 
+        \begin{definition}[Distanza metrica]
+            \begin{equation}
+                d = \left\{\begin{array}{l l}
+                        1 & x = y \\
+                        0 & x \neq y \\
+                \end{array}
+                \right.
+            \end{equation}
+        \end{definition}
+        \begin{definition}[Distanze $d_n, n \in \mathbb{N}$] \, \\
+            Dato un insieme $X^k$ sul quale sono definite la somma ed il prodotto:
+            $$d_n\left(x,y\right) = \sqrt[n]{\sum_{i=0}^k |\left(x_i - y_i\right)|^n}$$
+        \end{definition}
+        Dato l'insieme $\mathbb{R}^2$, $d_1$ è detta metrica del tassista e $d_2$ è detta metrica euclidea
+        \begin{definition}[$d_\infty$] \, \\
+            Dato un insieme $X^k$ sul quale sono definite la somma ed il prodotto:
+            $$d_\infty = \max\{|x_i-y_i|\}$$
+        \end{definition}
 \end{document}

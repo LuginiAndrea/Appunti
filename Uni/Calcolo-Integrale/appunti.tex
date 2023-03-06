@@ -4,7 +4,7 @@
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}{Lemma}[theorem]
-\newtheorem{identity}{Identity}[theorem]
+\newtheorem{definition}{Definition}[section]
 % \newcommand{\implies}{\Rightarrow}
 \newcommand{\qed}{\rule{0.7em}{0.7em}}
 \begin{document}
@@ -29,9 +29,19 @@
         La dimostrazione è alquanto semplice: \\
         Se $S_n$ converge per $n \to \infty$, allora 
         $$\lim_{n \to \infty} S_n = S_{n+1} = S \in \mathbb{R} \implies 
-            \lim_{n \to \infty} \sum_{k=0}^{n+1} - \lim_{n \to \infty} \sum_{k=0}^{n} = 
+            \lim_{n \to \infty} \sum_{k=0}^{n+1} a_k - \lim_{n \to \infty} \sum_{k=0}^{n} a_k = 
             \lim_{n \to \infty} a_{n+1} = 0
         $$
+        Una riformulazione equivalente è la seguente
+        \begin{theorem}[Criterio di Cauchy per la convergenza di una serie] 
+            $$\{S_n\} \textrm{ converge } \iff \forall m > n, |S_m - S_n| = 0 \textrm{ definitivamente }$$
+        \end{theorem}
+        \textit{Dimostrazione}: \\
+            Se $\{S_n\}$ converge ad $l$, allora $|\lim_{n \to \infty} S_n - \lim_{m \to \infty} S_m| = l - l = 0$. \\
+            Ipotizziamo ora che $|S_m - S_n| \neq 0$ definitivamente. Questo implica che, 
+            $$\forall n \in \mathbb{N}, \exists m > n \in \mathbb{N}, \exists \Delta  \in \mathbb{R}
+                \textrm{ t.c. } |S_m - S_n| = \Delta  = \sum_{i=n+1}^m a_i \implies a_m \neq 0$$
+            Per il criterio di convergenza di una serie ne consegue che $\{S_n\}$ non converge.
         \subsubsection{Nota bene}
             Il criterio non implica che se $a_n \to 0$ allora $S_n$ converge. Un esempio è la serie 
             $$\sum_{k=1}^\infty k^{-1} = \infty$$
@@ -120,9 +130,45 @@
         $$\{A_n\} \textrm{ con } A_n = \sum_{k=0}^n \left(-1\right)^ka_k, \{a_n\} \textrm{ definitivamente monotona decrescente e di segno costante }$$
         $$\implies \{A_n\} \to l_A \in \mathbb{R}$$
     \end{theorem}
+    \textit{Dimostrazione}:
+        In quanto la serie è monotona decrescente, ne segue che $|a_n - a_{n+1}| \leq |a_n| \forall n$ \\
+        Da questa idea ne segue facilmente (dimostrabile per induzione) che vale la disugaglianza
+        $$|a_m - \sum_{i = n+1}^{\infty} a_i| \leq |a_m - a_{m+1}| \leq |a_m| \forall m$$
+        Ma in quanto $lim_{n \to \infty} a_n = 0$ abbiamo che 
+        $$\forall m > n > N \in \mathbb{N}, \lim_{n \to \infty} |S_m - S_n| = |a_m - \sum_{i=n+1}^\infty \pm a_i| \leq a_m = 0$$
+        Ne consegue per il criterio di Cauchy che la serie converge.
     \begin{theorem}[Criterio della convergenza assoluta]
         $$\sum_{i=0}^\infty |a_n| \textrm{ converge } \implies \sum_{i=0}^\infty a_n \textrm{ converge }$$
     \end{theorem}
+\section{Formule importanti}
+    \begin{definition}[Formula di approssimazione di Stirling]
+        $$n! \sim \sqrt{2n\pi}\left(\frac{n}{e}\right)^n$$
+    \end{definition}
+    \begin{definition}[$e^x$ come serie]
+        $$e^x = \sum_{k=0}^\infty \frac{x^k}{k!}$$
+    \end{definition}
+    \begin{definition}[Comportamento asintotico del logaritmo del fattoriale]
+        $$\lim_{x \to \infty}\frac{\ln{x!}}{x} = \infty$$
+    \end{definition}
+    \textit{Dimostrazione}:
+        Sappiamo che, per $x \to \infty$, $x! > \alpha^x \forall \alpha$ Consideriamo allora 
+        tutti gli $\alpha$ nella forma $$\alpha = e^{k}, k \in \mathbb{N}$$
+        Consideriamo ora $$\lim_{x \to \infty}\frac{\ln{e^{kx}}}{x} = \frac{kx}{x} = {k}$$
+        Poichè ciò vale $\forall k$, vale per $k$ grande a piacere, di conseguenza per $k \to \infty$, 
+        il che implica che 
+        $$\lim_{x \to \infty}\frac{\ln{x!}}{x} > \lim_{x \to \infty}\frac{\ln{e^{kx}}}{x} \to \infty \; \qed$$
+    \begin{definition}[$e$ come limite]
+        $$e = \lim_{x \to \infty}\frac{x}{\sqrt[x]{x!}}$$
+    \end{definition}
+    \textit{Dimostrazione}:
+        Usando l'approssimazione di Stirling otteniamo
+        $$\lim_{x \to \infty}\frac{x}{\sqrt[2x]{2x\pi}} \times \left(\frac{e}{x}\right)^{x \times 1/x} = 
+            \lim_{x \to \infty}\frac{x}{\sqrt[2x]{2x\pi}} \times \frac{e}{x} = 
+            \lim_{x \to \infty}\frac{e}{\sqrt[x]{2x\pi}^{1/2}}$$
+        Recall that for $x \to \infty, x^{1/x} \sim 1$, we get for $x \to \infty$ that our 
+        limit $\sim e/1 = e \; \qed$
+    Ricordarsi bene anche limiti notevoli ed espansioni di Taylor-MacLaurin
+    
             
 
 \end{document}

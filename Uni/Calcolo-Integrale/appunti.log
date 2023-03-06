@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  2 MAR 2023 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  5 MAR 2023 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,7 +105,7 @@ LaTeX Info: Redefining \] on input line 2954.
 \c@theorem=\count271
 \c@corollary=\count272
 \c@lemma=\count273
-\c@identity=\count274
+\c@definition=\count274
 
 (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -147,58 +147,67 @@ LaTeX Warning: No \author given.
 [1
 
 {C:/Users/lugio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (10.09366pt too wide) detected at line 47
+Overfull \hbox (10.09366pt too wide) detected at line 57
 \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 S[]\OMS/cmsy/m/n/10 g[] ^ f\OML/cmm/m/it/10 
 a[]\OMS/cmsy/m/n/10 g[] ^^U \OML/cmm/m/it/10 = \OMS/cmsy/m/n/10 ^^T \OT1/cmr/m/
 n/10 0  =[]\OMS/cmsy/m/n/10 )  f\OML/cmm/m/it/10 S[]\OMS/cmsy/m/n/10 g[]
  []
 
-
-Overfull \hbox (42.88382pt too wide) detected at line 72
+[2]
+Overfull \hbox (42.88382pt too wide) detected at line 82
 \OMS/cmsy/m/n/10 8f\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; \OM
 S/cmsy/m/n/10 f\OML/cmm/m/it/10 B[]\OMS/cmsy/m/n/10 g[]\OML/cmm/m/it/10 ; a[] \
 OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 b[][]  \OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10
  ) 
  []
 
-[2]
-Overfull \hbox (63.16849pt too wide) detected at line 120
+[3]
+Overfull \hbox (63.16849pt too wide) detected at line 130
 \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 g[]\OML/cmm/m/it/10 A[] 
 \OT1/cmr/m/n/10 = [] [][] \OML/cmm/m/it/10 a[]; \OMS/cmsy/m/n/10 f\OML/cmm/m/it
 /10 a[]\OMS/cmsy/m/n/10 g[]
  []
 
-[3] [4] (appunti.aux) ) 
+[4]
+Overfull \hbox (14.03418pt too wide) in paragraph at lines 151--151
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+
+ []
+
+[5] (appunti.aux) ) 
 Here is how much of TeX's memory you used:
  1753 strings out of 478338
- 25220 string characters out of 2836700
- 330147 words of memory out of 3000000
+ 25232 string characters out of 2836700
+ 329157 words of memory out of 3000000
  20214 multiletter control sequences out of 15000+600000
  478501 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,9n,62p,243b,226s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\lugio\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lugi
-o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Us
-ers/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lugio/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lug
-io/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on appunti.pdf (4 pages, 180301 bytes).
+ <C:\Users\lugio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lugio/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/
+lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lugio/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lugio/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on appunti.pdf (5 pages, 192765 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

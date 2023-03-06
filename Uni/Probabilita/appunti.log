@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  6 MAR 2023 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  6 MAR 2023 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -130,9 +130,9 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \c@theorem=\count271
 \c@corollary=\count272
 \c@lemma=\count273
-\c@identity=\count274
-\c@definition=\count275
-\c@examples=\count276
+\c@definition=\count274
+\c@examples=\count275
+\c@osservation=\count276
 
 (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -142,20 +142,20 @@ File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 ) (appunti.aux)
 \openout1 = `appunti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -182,12 +182,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
  (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (C:\Users\lugio\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -198,92 +198,117 @@ LaTeX Warning: No \author given.
 
 [1
 
-{C:/Users/lugio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<limsupinf.png, id=18, 291.0875pt x 148.555pt>
-File: limsupinf.png Graphic file (type png)
-<use limsupinf.png>
-Package pdftex.def Info: limsupinf.png  used on input line 64.
-(pdftex.def)             Requested size: 291.08678pt x 148.55463pt.
- [2 <./limsupinf.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+{C:/Users/lugio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
+Overfull \hbox (4.7884pt too wide) in paragraph at lines 127--127
+[]
  []
 
 
-Overfull \hbox (38.49388pt too wide) detected at line 96
-\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 g[]  \OT1/cmr/m/n/10 =[]
-\OMS/cmsy/m/n/10 )  9\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N[]\OM
-S/cmsy/m/n/10 8\OML/cmm/m/it/10 m; n > K\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[] 
-\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 < 
-"[]  \OT1/cmr/m/n/10 =[]\OMS/cmsy/m/n/10 )  \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/
-10 ^^@ \OML/cmm/m/it/10 "[] < a[] < a[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 "[]
- []
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 
-
-Overfull \hbox (26.92082pt too wide) detected at line 103
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 n; i \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 N[]\OM
-L/cmm/m/it/10 n; '[] > [] [] ; \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[] \OMS/cmsy
-/m/n/10 ^^@ \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 + \OMS/cmsy/
-m/n/10 j\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 p\OMS/cmsy/m
-/n/10 j \OML/cmm/m/it/10 < "[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 "[]  \OT1/cmr
-/m/n/10 =[]\OMS/cmsy/m/n/10 )  j\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/
-cmm/m/it/10 p\OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 < "[] \OT1/cmr/m/n/10 + \OML/c
-mm/m/it/10 "[] []
  []
 
 [3]
-Overfull \hbox (64.09526pt too wide) detected at line 142
-\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OMS
-/cmsy/m/n/10 9\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E[]x > \OM
-S/cmsy/m/n/10 f\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 g ^^@ \OML/cmm/m/it/10 " > 
-^^V \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 "[]  \OT1/cmr/m/n/10
- =[]\OMS/cmsy/m/n/10 )  8\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0\OML/cmm/m/it/10
- ; \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E[]
-x > ^^V \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 " []
+Overfull \hbox (8.14131pt too wide) in paragraph at lines 154--156
+[]\OT1/cmr/m/it/10 definiamo $\U/msb/m/n/10 P$
  []
 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+Overfull \hbox (55.04921pt too wide) in paragraph at lines 161--164
+[]
+ []
+
+
+Overfull \hbox (17.10635pt too wide) in paragraph at lines 170--174
+[]\OT1/cmr/m/it/10 E' detta \OT1/cmr/bx/it/10 spazio di prob-
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[6] [7] (appunti.aux) ) 
+
+Overfull \hbox (50.63123pt too wide) in paragraph at lines 201--201
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[5]
+Overfull \hbox (7.84639pt too wide) in paragraph at lines 208--211
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+
+ []
+
+
+Overfull \hbox (25.16016pt too wide) in paragraph at lines 212--215
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+
+ []
+
+
+Overfull \hbox (135.65018pt too wide) in paragraph at lines 223--229
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--229
+
+ []
+
+[6] (appunti.aux) ) 
 Here is how much of TeX's memory you used:
- 2626 strings out of 478338
- 38877 string characters out of 2836700
- 341615 words of memory out of 3000000
- 21050 multiletter control sequences out of 15000+600000
- 480107 words of font info for 69 fonts, out of 8000000 for 9000
+ 2614 strings out of 478338
+ 38716 string characters out of 2836700
+ 345666 words of memory out of 3000000
+ 21040 multiletter control sequences out of 15000+600000
+ 478860 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,62p,236b,219s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\lugio\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/lugio/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lu
-gio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
-/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5
-.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/lugio/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/l
-ugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
-:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on appunti.pdf (7 pages, 220935 bytes).
+ 55i,6n,62p,226b,219s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\lugio\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\tcrm1000.pk><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lugio/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/lugio/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Use
+rs/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lugio/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lug
+io/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on appunti.pdf (6 pages, 204312 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

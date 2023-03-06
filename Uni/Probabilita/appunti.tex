@@ -1,0 +1,231 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Corollario}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+% \newtheorem{identity}{Identity}[theorem]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{examples}{Examples}[section]
+\newtheorem{osservation}{Osservazione}[section]
+\newcommand{\qed}{\rule{0.7em}{0.7em}}
+\newcommand{\PS}[1]{\mathcal{P}\left(#1\right)}
+\newcommand{\Prob}[1]{\mathbb{P}\left(#1\right)}
+\begin{document}
+\title{Probabilità I}
+\maketitle
+\section{Introduzione alla probabilità}
+    \begin{definition}[Evento] \, \\
+        Un evento è una \textbf{proposizione} relativa al 
+        modo di risultare di un esperimento
+    \end{definition}
+    Definiamo $\varepsilon$ una famiglia di possibili eventi distinti di un esperimento. \\
+    E' naturale introdurre all'interno di $\varepsilon$ le operazioni logiche:
+    \begin{itemize}
+        \item OR: $\varepsilon_1 \lor \varepsilon_2$ si verifica almeno uno dei due eventi 
+        \item AND: $\varepsilon_1 \land \varepsilon_2$ si verificano entrambi gli eventi 
+        \item NOT: $\neg \varepsilon_1$ non si verifica l'evento 
+    \end{itemize}
+    \begin{definition}[Evento composto] \, \\
+        Un evento $E \in \varepsilon$ è composto se 
+        $\exists E_1 \neq E_2 \neq E \in \varepsilon \textrm{ t.c. } E = E_1 \lor E_2$
+    \end{definition} 
+    \begin{definition}[Evento elementare] \, \\
+        Un evento $\omega \in \varepsilon$ non composto.
+    \end{definition}
+    \begin{definition}[Decomposizione di un evento]
+        $$\forall E \in \varepsilon, \mathcal{H}\left(E\right) = \{\omega_1, ..., \omega_n\} \textrm{ t.c. }
+            E = \omega_1 \lor ... \lor \omega_n$$
+    \end{definition}
+    Si dice che \textit{un evento composto $E$ si è verificato $\iff$ si è verificato
+        un evento elementare $\omega_i$ della decomposizione di E}
+    \begin{definition}[Spazio campione] \, \\
+        Lo spazio campione $\Omega \subset \varepsilon$ è l'insieme degli eventi 
+        elementari di $\varepsilon$
+    \end{definition}
+    \begin{theorem}[Modelizzazione dello spazio campione]
+        $$\forall E \in \varepsilon, \exists! \omega_1, ..., \omega_n \textrm{ t.c. }
+            E = \omega_1 \lor ... \lor \omega_n
+        $$
+    \end{theorem}
+    \begin{definition}[Famiglia delle parti] \, \\
+        E' detta famiglia delle parti di $\Omega$ l'insieme potenza $\mathcal{P}\left(\Omega\right)$
+    \end{definition}
+    \begin{corollary}[Completezza della famiglia delle parti]
+        $$\forall E \in \varepsilon, \exists! \mathcal{H}\left(E\right) \in \mathcal{P}\left(\Omega\right)$$
+    \end{corollary}
+    \begin{osservation}[Quanti sono i sottoinsiemi di $k$ elementi di $\mathcal{P}\left(\Omega\right)$]
+        $$C_k = \{S: S \in \mathcal{P}\left(\Omega\right) \textrm{ t.c. } |S| = k\} \implies |C_k| = \binom{|\Omega|}{k}$$
+    \end{osservation}
+    \subsection{Eventi come insiemi}
+        Da ciò che abbiamo appena visto ne deriva che ogni evento, e di conseguenza le operazioni logiche sugli eventi, si possono 
+        anche vedere come insiemi correlati da operazioni insiemistiche:
+        \begin{itemize}
+            \item $E_1 \lor E_2 = \mathcal{H}\left(E_1\right) \cup \mathcal{H}\left(E_2\right)$
+            \item $E_1 \land E_2 = \mathcal{H}\left(E_1\right) \cap \mathcal{H}\left(E_2\right)$
+            \item $\neg E_1 = \overline{\mathcal{H}\left(E\right)}$
+            \item $E_1 \oplus E_2 = \mathcal{H}\left(E_1\right) \Delta \mathcal{H}\left(E_2\right) 
+                = \left(\mathcal{H}\left(E_1\right) \cap \overline{\mathcal{H}\left(E_2\right)}\right) \cup 
+                \left(\mathcal{H}\left(E_2\right) \cap \overline{\mathcal{H}\left(E_1\right)}\right)$
+            \item $E_1 \implies E_2 = \mathcal{H}\left(E_1\right) \subset \mathcal{H}\left(E_2\right)$
+        \end{itemize}
+        Alcune osservazioni importanti sono che:
+        \begin{itemize}
+            \item $\Omega$ è \textbf{l'evento certo} (sempre vero)
+            \item $\emptyset$ è \textbf{l'evento impossibile} (sempre falso)
+            \item $A \cup B = \Omega$ allora $A, B$ sono \textbf{esaustivi}
+            \item $A \cap B = \emptyset$ allora $A, B$ sono \textbf{incompatibili}
+        \end{itemize}
+        \begin{definition}[Partizione dell'evento certo] \, \\
+            $\forall \mathcal{H} \subset \mathcal{P}\left(\Omega\right), \mathcal{H} \textrm{ è detta 
+                partizione di } \Omega \iff$
+            $$\forall H_1, H_2 \in \mathcal{H}, H_1 \cap H_2 = \emptyset \land \bigcup_{i=0}^{|\mathcal{H}|} H_i = \Omega$$
+        \end{definition}
+        \begin{theorem}[Proprietà distributiva e leggi di De Morgan]
+            $$\left(A \cup B\right)\cap C = \left(A \cap C\right) \cup \left(B \cap C\right)$$
+            $$\left(A \cap B\right) \cup C = \left(A \cup C\right) \cap \left(B \cup C\right)$$
+            $$\overline{A \cup B} = \overline{A} \cap \overline{B}$$
+            $$\overline{A \cap B} = \overline{A} \cup \overline{B}$$
+        \end{theorem}
+\newpage
+\section{Spazi di probabilità}
+    \begin{definition}[Probabilità] \, \\
+        Una probabilità su $\left(\Omega, \mathcal{P}\left(\Omega\right)\right)$ è una funzione 
+        $\mathbb{P}$ che soddisfa gli assiomi di probabilità:
+        \begin{enumerate}
+            \item $\mathbb{P}: \mathcal{P}\left(\Omega\right) \to \left[0, 1\right]$
+            \item $\mathbb{P}\left(\Omega\right) = 1$ (condizione di normalizzazione)
+            \item $E_1, ..., E_n \in \mathcal{P}\left(\Omega\right) \textrm{ incompatibili}, \mathbb{P}\left(E_1 \cup ... \cup E_2\right) 
+                = \mathbb{P}\left(E_1\right) + ... + \mathbb{P}\left(E_2\right)$ (proprietà di additività finita)
+        \end{enumerate}
+    \end{definition}
+    \begin{definition}[Spazio finito di probabilità] \, \\
+        E' uno spazio finito di probabilità la terna $\left(\Omega, \mathcal{P}\left(\Omega\right), \mathbb{P}\right)$
+        con $\Omega$ insieme finito
+    \end{definition}
+    \begin{theorem}[Passaggio al complemento] \, \\
+        $$\forall E, \mathbb{P}\left(E\right) = 1 - \mathbb{P}\left(\overline{E}\right)$$
+    \end{theorem}
+    \textit{Dimostrazione}:
+        $$\Prob{\Omega} = 1 = \Prob{E \cup \overline{E}} = \Prob{E} + \Prob{\overline{E}} \iff \Prob{E} = 1 - \Prob{\overline{E}} \; \qed$$
+    \begin{theorem}[Probabilità dell'evento nullo]
+        $$\Prob{\emptyset} = 0$$
+    \end{theorem}
+    \textit{Dimostrazione}:
+        $$\Prob{\emptyset} = \Prob{\emptyset \cup \emptyset} = \Prob{\emptyset} + \Prob{\emptyset} \iff 2\Prob{\emptyset} = \Prob{\emptyset} \iff \Prob{\emptyset} = 0 \; \qed$$
+    \begin{theorem}[Proprietà di monotonia]
+        $$E_1 \subseteq E_2, \Prob{E_2} \geq \Prob{E_1}$$
+    \end{theorem}
+    \textit{Dimostrazione}:
+        $$E_2 = E_1 \cup E_2 \cap \overline{E_1} \implies \Prob{E_2} = \Prob{E_1} + \Prob{E_2 \cap \overline{E_1}}$$
+        Per l'assioma di non negatività ne segue che $\Prob{E_2} \geq \Prob{E_1} \; \qed$
+    \begin{corollary}[Probabilità della differenza]
+        $$E_1 \subseteq E_2, \Prob{E_2 \setminus E_1} = \Prob{E_2} - \Prob{E_1}$$
+    \end{corollary}
+    \begin{theorem}[Principio probabilistico di inclusione esclusione (PIE)]
+        $$\Prob{E_1 \cup E_2} = \Prob{E_1} + \Prob{E_2} - \Prob{E_1 \cap E_2}$$
+    \end{theorem}
+    \textit{Dimostrazione}: \\
+        Prendiamo $I = E_1 \cap E_2$, allora $E_1 = I \cup E_1 \cap \overline{I}$ e $E_2 = I \cup E_2 \cap \overline{I}$, il che implica 
+        $$\Prob{E_1} + \Prob{E_2} = 2\Prob{I} + \Prob{E_1 \cap \overline{I}} + \Prob{E_2 \cap \overline{I}}$$
+        $$\Prob{E_1 \cup E_2} = \Prob{I \cup E_1 \cap \overline{I} \cup I \cup E_2 \cap \overline{I}} = \Prob{I} + \Prob{E_1 \cap \overline{I}} + 
+            \Prob{E_2 \cap \overline{I}}$$
+        Ma quindi $$\Prob{E_1 \cup E_2} = \Prob{E_1} + \Prob{E_2} - \Prob{I} = \Prob{E_1} + \Prob{E_2} - \Prob{E_1 \cap E_2} \; \qed$$
+    \begin{theorem}[Probabilità della partizione]
+        $$\Prob{\mathcal{H}} = 1 = \sum_{i=0}^{|\mathcal{H}|}H_i$$
+    \end{theorem}
+    \begin{corollary}[Probabilità della partizione elementare]
+        $$\forall w_i \in \Omega, \Prob{\{w_i\}} = p\left(w_i\right) \implies \sum_{i=0}^{|\Omega|}\Prob{\{w_i\}} = 1$$
+    \end{corollary}
+    \begin{definition}[Funzione densità] \, \\
+        La funzione $p: \Omega \to \left[0,1\right]$ definita o come funzione tale che $\sum_{w \in \Omega} p\left(w_i\right) = 1$
+        o come $\forall w_i \in \Omega, p\left(w_i\right) = \Prob{\{w_i\}}$ è detta \textbf{funzione densità}
+    \end{definition}
+    \begin{theorem}[Probabilità dell'evento $E$ data una partizione $\mathcal{H}$]
+        $$\forall E \in \PS{\Omega}, \forall \mathcal{H} \textrm{ partizione di } \Omega, 
+            \Prob{E} = \sum_{i=1}^{|\mathcal{H}|}\Prob{E \cap H_i}$$
+    \end{theorem}
+    \textit{Dimostrazione}:
+        $$\Prob{E} = \Prob{E \cap \Omega} = \Prob{E \cap \bigcup_{i=1}^{|\mathcal{H}|} H_i} = 
+            \Prob{\bigcup_{i=1}^{|\mathcal{H}|} E \cap H_i} = \sum_{i=1}^{|\mathcal{H}|} \Prob{E \cap H_i} \; \qed$$
+    \begin{osservation}[Costruire uno spazio di probabilità]
+        \begin{enumerate}
+            \item definiamo $\mathbb{P}$ come probabilità su $\left(\Omega, \PS{\Omega}\right)$, e 
+                definiamo $\forall w_i \in \Omega, p\left(w_i\right) = \Prob{\{w_i\}}$
+            \item definiamo $p: \Omega \to \left[0,1\right]$ tale che $\sum_{w\in \Omega}p\left(w_i\right) = 1$ e definiamo 
+                $\mathbb{P}: \PS{\Omega} \to \left[0,1\right], \; \Prob{E} = \sum_{w \in E} p\left(w_i\right)$
+        \end{enumerate}
+    \end{osservation}
+    \begin{osservation}[Probabilità definite a meno di un fattore di proporzionalità]
+        Supponiamo di avere una tupla $g = \left(g_1, ..., g_{|\Omega|}\right)$ tale che
+        $\forall 0 < i < |\Omega|, 0 \leq g_i \leq 1 \land \exists 0 < j < |\Omega| \textrm{ t.c. } g_j \neq 0$ 
+        ed una funzione $p: \Omega \to \mathbb{R}^+, p\left(w_i\right) = \Prob{\{w_i\}}, p\left(w_i\right) \propto g_i$, allora 
+        $$\forall w_i \in \Omega, p\left(w_i\right) = \frac{g_i}{\sum_{j=0}^|\Omega| g_j}$$
+    \end{osservation}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%Inserire la parte sulla costruzione di uno spazio di probabilità finito%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{definition}[Spazio di probabilità numerabili]
+        E' detta \textbf{spazio di probabilità numerabile} la terna 
+        $\left(\Omega, \mathcal{P}\left(\Omega\right), \mathbb{P}\right)$, con 
+        $\Omega$ numerabile ($|\Omega| = \aleph_0$), e $\mathbb{P}$ soddisfa \textbf{proprietà di 
+        additività numerabile}:
+        $$\forall i \neq j \in \mathbb{N} E_i, E_j \textrm{ incompatibili } \implies 
+            \Prob{\bigcup_{i=1}^\infty E_i} = \sum_{i=1}^\infty \Prob{E_i}$$
+    \end{definition}
+    \begin{theorem}[Probabilità dell'evento nullo]
+        $$\Prob{\emptyset} = 0$$
+    \end{theorem}
+    La dimostrazione è analoga (con $n$ insiemi) a quella in spazio finito. \\
+    \begin{theorem}[Additività numerabile $\implies$ additività finita] \, \\
+        Dato la spazio di probabilità numerabile $\left(\Omega, \PS{\Omega}, \mathbb{P}\right)$,
+        su questo spazio vale anche la proprietà di additività finita.
+    \end{theorem}
+    \textit{Dimostrazione}:
+        Prendiamo l'eventi $E_n, n \in \mathbb{N}^+$, fra loro incompatibili, e definiamo 
+        $$E_j = \emptyset \forall j \in \mathbb{N} \textrm{ t.c. } j > n$$
+        Per definizione, questi eventi sono incompatibili con tutti gli altri eventi, ed inoltre risulta che 
+        $\bigcup_{i=1}^n E_i = \bigcup{i=1}^\infty E_i$. Ne segue allora 
+        $$\Prob{\bigcup_{i=1}^n E_i} = \Prob{\bigcup_{i=1}^\infty E_i} = \sum_{i=1}^n \Prob{E_i} + 
+            \sum_{i=n+1}^\infty \Prob{E_j} = \sum_{i=1}^n \Prob{E_i} \; \qed$$
+    \begin{corollary}[Proprietà dello spazio di probabilità numerabile] \, \\
+        Tutte le proprietà degli spazi di probabilità finiti valgono per gli spazi di probabilità numerabili
+    \end{corollary}
+\section{Probabilità uniformi e cenni di calcolo combinatorio}
+    \begin{definition}[Distribuzione di probabilità uniforme] \, \\
+        Si ha una \textbf{distribuzione di probabilità uniforme} quando 
+        $$|\Omega| \in \mathbb{N}, \forall w \in \Omega, p\left(w\right) = 1/|\Omega|$$
+    \end{definition}
+    \begin{corollary}[Probabilità di un evento $E$ data una distribuzione uniforme]
+        $$\forall E \in \PS{\Omega}, \Prob{E} = \frac{|E|}{|\Omega|}$$
+        Ovvero la probabilità di un evento $E$ è data dal rapporto dei casi favorevoli sui casi totali
+    \end{corollary}
+    In queste condizioni risulta molto importante contare quanti sono i casi favorevoli e quanti i casi totali, che risulta 
+    essere un problema di combinatoria.
+    \subsection{Cenni di calcolo combinatorio}
+        \textbf{N.B:} $A$ è un insieme con cardinalità $n$. \\
+        \begin{definition}[Disposizioni con ripetizioni di classe $k$ di $n$ elementi] \, \\
+            Corrisponde ad una singola $k$-upla ordinata di $A$. \\
+            L'insieme di tutte le $k$-uple ordinate di $A$ ha cardinalità $n^k$
+        \end{definition}
+        \begin{definition}[Disposizioni senza ripetizioni di classe $k$ con $n$ elementi] \, \\
+            Corrisponde ad singola $k$-upla ordinata, con tutti gli elementi distinti, di $A$. \\
+            L'insieme di tutte le $k$-uple che rispettano questo vincolo ha cardinalità $\frac{n!}{\left(n-k\right)!}$
+        \end{definition}
+        \begin{definition}[Permutazione] \, \\
+            Disposizione senza ripetizione di classe $n$ con $n$ elementi. 
+        \end{definition}
+        \begin{definition}[Combinazione di classe $k$ con $n$ elementi] \, \\
+            Corrisponde ad un sottoinsieme di cardinalità $k$ di $A$. \\
+            L'insieme di tutti questi sottoinsiemi ha cardinalità $\binom{n}{k}$
+        \end{definition}
+        \begin{osservation}[Correlazione fra combinazioni, permutazioni e disposizioni senza ripetizioni] \, \\
+            Prendiamo le disposizioni senza ripetizioni di classe $k$. Questo corrisponde ad un insieme di 
+            $k$-uple nel quale conta l'ordine. \\
+            Le combinazioni invece hanno sì cardinalità $k$, ma l'ordine non conta: ne consegue 
+            che tutte le possibili permutazioni di una $k$-upla ordinata di elementi distinti 
+            corrispondono alla stessa combinazione. Ne segue quindi che $C^n_k = \frac{D^n_k}{P_k}$
+        \end{osservation}
+\end{document}
+    
