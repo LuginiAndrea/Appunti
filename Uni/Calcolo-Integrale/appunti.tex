@@ -34,14 +34,15 @@
         $$
         Una riformulazione equivalente è la seguente
         \begin{theorem}[Criterio di Cauchy per la convergenza di una serie] 
-            $$\{S_n\} \textrm{ converge } \iff \forall m > n, |S_m - S_n| = 0 \textrm{ definitivamente }$$
+            $$\{S_n\} \textrm{ converge } \iff \forall m > n, S_m - S_n = 0 \textrm{ definitivamente }$$
         \end{theorem}
         \textit{Dimostrazione}: \\
             Se $\{S_n\}$ converge ad $l$, allora $|\lim_{n \to \infty} S_n - \lim_{m \to \infty} S_m| = l - l = 0$. \\
-            Ipotizziamo ora che $|S_m - S_n| \neq 0$ definitivamente. Questo implica che, 
-            $$\forall n \in \mathbb{N}, \exists m > n \in \mathbb{N}, \exists \Delta  \in \mathbb{R}
-                \textrm{ t.c. } |S_m - S_n| = \Delta  = \sum_{i=n+1}^m a_i \implies a_m \neq 0$$
-            Per il criterio di convergenza di una serie ne consegue che $\{S_n\}$ non converge.
+            Dimostriamo ora l'implicazione contraria: \\
+            $\forall m > n, S_m - S_n = 0$ definitivamente implica che $\lim_{m \to \infty} S_m - S_n = 0$, 
+            il che implica che $\lim_{m \to \infty} S_m = S_n$. \\
+            Essendo $n$ fissato (non tendente ad infinito), ne segue che $S_n \in \mathbb{R}$, il che quindi implica che 
+            $\lim_{m \to \infty} S_m \in \mathbb{R}$, ovvero che la serie converge $\; \qed$ 
         \subsubsection{Nota bene}
             Il criterio non implica che se $a_n \to 0$ allora $S_n$ converge. Un esempio è la serie 
             $$\sum_{k=1}^\infty k^{-1} = \infty$$
