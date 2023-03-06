@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  6 MAR 2023 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.28)  6 MAR 2023 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -282,7 +282,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--229
 Here is how much of TeX's memory you used:
  2614 strings out of 478338
  38716 string characters out of 2836700
- 345666 words of memory out of 3000000
+ 345657 words of memory out of 3000000
  21040 multiletter control sequences out of 15000+600000
  478860 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -294,21 +294,19 @@ pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/lugio/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lugio/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Use
-rs/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+rs/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 ><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lugio/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lug
-io/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on appunti.pdf (6 pages, 204312 bytes).
+mr10.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><C:/Users/lugio/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lugio/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/lugio/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/lugio/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on appunti.pdf (6 pages, 195541 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
